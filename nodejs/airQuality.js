@@ -18,7 +18,7 @@ const joinData = (data, columns) => {
     const myData = data
         .map(item => item
             .map((col, index) => [columns[index], col])
-            .filter((col, index) => index > 7)
+            // .filter((col, index) => index > 7)
         )
         .map(item => new Map(item))
         .map(item => {
