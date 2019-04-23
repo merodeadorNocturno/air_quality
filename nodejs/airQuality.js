@@ -1,4 +1,4 @@
-console.time();
+console.time('node:');
 const airQuality = require('../json_files/sample.json');
 
 const createColumnVector = (aq) => {
@@ -18,7 +18,7 @@ const joinData = (data, columns) => {
     const myData = data
         .map(item => item
             .map((col, index) => [columns[index], col])
-            // .filter((col, index) => index > 7)
+            .filter((col, index) => index > 7)
         )
         .map(item => new Map(item))
         .map(item => {
@@ -32,5 +32,5 @@ const joinData = (data, columns) => {
 };
 
 const d = joinData(createDataVector(airQuality), createColumnVector(airQuality));
-console.log(d);
-console.timeEnd();
+// console.log(d);
+console.timeEnd('node:');

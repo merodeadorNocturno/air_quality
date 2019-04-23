@@ -10,11 +10,6 @@ use std::io::BufReader;
 
 use std::time::Instant;
 
-// #[derive(Deserialize)]
-// struct AirDataArray {
-//     data: Vec<AirData>,
-// }
-
 #[derive(Deserialize)]
 pub struct AirData {
     sid: String,
@@ -25,6 +20,23 @@ pub struct AirData {
     updated_at: u32,
     updated_meta: serde_json::Value,
     meta: String,
+    measure_id: String,
+    measure_name: String,
+    measure_type: String,
+    stratification_level: String,
+    state_fips: String,
+    state_name: String,
+    county_fips: String,
+    county_name: String,
+    report_year: String,
+    value: String,
+    unit: String,
+    unit_name: String,
+    data_origin: String,
+    monitor_only: String,
+}
+
+pub struct UsefulData {
     measure_id: String,
     measure_name: String,
     measure_type: String,
@@ -60,30 +72,22 @@ pub fn get_air_values(filepath: &str) -> JsonValue {
     air_quality
 }
 
-pub fn create_column_vector(columns: JsonValue) -> Vec<String> {
-    let mut column_vector: Vec<String> = Vec::new();
+// pub fn create_column_vector(columns: JsonValue) -> Vec<String> {
+//     let mut column_vector: Vec<String> = Vec::new();
 
-    for index in 0..21 {
-        column_vector.push(columns[index]["name"].to_string());
-    }
+//     for index in 0..21 {
+//         column_vector.push(columns[index]["name"].to_string());
+//     }
 
-    column_vector
-}
+//     column_vector
+// }
 
-pub fn create_data_vector(data: JsonValue) -> Vec<AirData> {
-    let mut data_vector: Vec<AirData> = Vec::new();
+pub fn create_data_vector(data: JsonValue) -> Vec<UsefulData> {
+    let mut data_vector: Vec<UsefulData> = Vec::new();
     let air_data_array: Vec<AirData> = serde_json::from_value(data).unwrap();
 
-    for air_data in air_data_array {
-        let ad = AirData {
-            sid: air_data.sid,
-            id: air_data.id,
-            position: air_data.position,
-            created_at: air_data.created_at,
-            created_meta: air_data.created_meta,
-            updated_at: air_data.updated_at,
-            updated_meta: air_data.updated_meta,
-            meta: air_data.meta,
+        for air_data in air_data_array {
+        let ad = UsefulData {
             measure_id: air_data.measure_id,
             measure_name: air_data.measure_name,
             measure_type: air_data.measure_type,
@@ -105,23 +109,46 @@ pub fn create_data_vector(data: JsonValue) -> Vec<AirData> {
     data_vector
 }
 
+pub fn join_data(my_data: Vec<AirData>) -> Vec<UsefulData> {
+    let mut _my_data: Vec<UsefulData> = Vec::new();
+
+    for _data in my_data {
+        // println!("{}", _data.measure_name);
+        let useful_data = UsefulData {
+            measure_id: _data.measure_id,
+            measure_name: _data.measure_name,
+            measure_type: _data.measure_type,
+            stratification_level: _data.stratification_level,
+            state_fips: _data.state_fips,
+            state_name: _data.state_name,
+            county_fips: _data.county_fips,
+            county_name: _data.county_name,
+            report_year: _data.report_year,
+            value: _data.value,
+            unit: _data.unit,
+            unit_name: _data.unit_name,
+            data_origin: _data.data_origin,
+            monitor_only: _data.monitor_only,
+        };
+        _my_data.push(useful_data);
+    }
+
+    _my_data
+}
+
 fn main() {
     let init = Instant::now();
-    let filepath = "/Users/pills/Development/rust/air_quality/json_files/airQuality.json";
+    let filepath = "/home/tonatiuh.martinez/Development/rust/air_quality/json_files/airQuality.json";
     let air_json: JsonValue = get_air_values(&filepath);
 
-    let _columns = create_column_vector(air_json["meta"]["view"]["columns"].clone());
+    // let _columns = create_column_vector(air_json["meta"]["view"]["columns"].clone());
     let data = &air_json["data"];
 
-    for column in _columns {
-        println!("{}", column);
-    }
+    // println!("{}", _columns[0]);
 
     let _my_data = create_data_vector(data.clone());
 
-    // for data in my_data {
-    //     println!("{}", data.county_name);
-    // }
+    // join_data(_my_data);
 
     let ended = Instant::now();
     println!("Rust: {:?}", ended.duration_since(init));
