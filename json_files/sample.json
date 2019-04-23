@@ -1,0 +1,1180 @@
+{
+    "meta": {
+      "view": {
+        "columns": [
+          {
+            "id": -1,
+            "name": "sid",
+            "dataTypeName": "meta_data",
+            "fieldName": ":sid",
+            "position": 0,
+            "renderTypeName": "meta_data",
+            "format": {},
+            "flags": [
+              "hidden"
+            ]
+          },
+          {
+            "id": -1,
+            "name": "id",
+            "dataTypeName": "meta_data",
+            "fieldName": ":id",
+            "position": 0,
+            "renderTypeName": "meta_data",
+            "format": {},
+            "flags": [
+              "hidden"
+            ]
+          },
+          {
+            "id": -1,
+            "name": "position",
+            "dataTypeName": "meta_data",
+            "fieldName": ":position",
+            "position": 0,
+            "renderTypeName": "meta_data",
+            "format": {},
+            "flags": [
+              "hidden"
+            ]
+          },
+          {
+            "id": -1,
+            "name": "created_at",
+            "dataTypeName": "meta_data",
+            "fieldName": ":created_at",
+            "position": 0,
+            "renderTypeName": "meta_data",
+            "format": {},
+            "flags": [
+              "hidden"
+            ]
+          },
+          {
+            "id": -1,
+            "name": "created_meta",
+            "dataTypeName": "meta_data",
+            "fieldName": ":created_meta",
+            "position": 0,
+            "renderTypeName": "meta_data",
+            "format": {},
+            "flags": [
+              "hidden"
+            ]
+          },
+          {
+            "id": -1,
+            "name": "updated_at",
+            "dataTypeName": "meta_data",
+            "fieldName": ":updated_at",
+            "position": 0,
+            "renderTypeName": "meta_data",
+            "format": {},
+            "flags": [
+              "hidden"
+            ]
+          },
+          {
+            "id": -1,
+            "name": "updated_meta",
+            "dataTypeName": "meta_data",
+            "fieldName": ":updated_meta",
+            "position": 0,
+            "renderTypeName": "meta_data",
+            "format": {},
+            "flags": [
+              "hidden"
+            ]
+          },
+          {
+            "id": -1,
+            "name": "meta",
+            "dataTypeName": "meta_data",
+            "fieldName": ":meta",
+            "position": 0,
+            "renderTypeName": "meta_data",
+            "format": {},
+            "flags": [
+              "hidden"
+            ]
+          },
+          {
+            "id": 217182091,
+            "name": "MeasureId",
+            "dataTypeName": "number",
+            "description": "Unique identifier for Measure Name used within the Environmental Health Tracking Network",
+            "fieldName": "measureid",
+            "position": 1,
+            "renderTypeName": "number",
+            "tableColumnId": 30482153,
+            "width": 138,
+            "cachedContents": {
+              "non_null": 218635,
+              "average": "248.4369794406202",
+              "largest": "296",
+              "null": 0,
+              "top": [
+                {
+                  "item": "83",
+                  "count": 20
+                },
+                {
+                  "item": "84",
+                  "count": 19
+                },
+                {
+                  "item": "85",
+                  "count": 18
+                },
+                {
+                  "item": "86",
+                  "count": 17
+                },
+                {
+                  "item": "87",
+                  "count": 16
+                },
+                {
+                  "item": "292",
+                  "count": 15
+                },
+                {
+                  "item": "293",
+                  "count": 14
+                },
+                {
+                  "item": "294",
+                  "count": 13
+                },
+                {
+                  "item": "295",
+                  "count": 12
+                },
+                {
+                  "item": "296",
+                  "count": 11
+                }
+              ],
+              "smallest": "83",
+              "sum": "54317019"
+            },
+            "format": {
+              "precisionStyle": "standard",
+              "noCommas": "false",
+              "align": "right"
+            }
+          },
+          {
+            "id": 217182092,
+            "name": "MeasureName",
+            "dataTypeName": "text",
+            "description": "Unique name created by National Environmental Health Tracking Network to identify and clearly describe data presented",
+            "fieldName": "measurename",
+            "position": 2,
+            "renderTypeName": "text",
+            "tableColumnId": 30482154,
+            "width": 232,
+            "cachedContents": {
+              "non_null": 218635,
+              "largest": "Person-days with PM2.5 over the National Ambient Air Quality Standard",
+              "null": 0,
+              "top": [
+                {
+                  "item": "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard",
+                  "count": 20
+                },
+                {
+                  "item": "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard",
+                  "count": 19
+                },
+                {
+                  "item": "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)",
+                  "count": 18
+                },
+                {
+                  "item": "Person-days with PM2.5 over the National Ambient Air Quality Standard",
+                  "count": 17
+                },
+                {
+                  "item": "Annual average ambient concentrations of PM2.5 in micrograms per cubic meter (based on seasonal averages and daily measurement)",
+                  "count": 16
+                },
+                {
+                  "item": "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard (monitor and modeled data)",
+                  "count": 15
+                },
+                {
+                  "item": "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard (monitor and modeled data)",
+                  "count": 14
+                },
+                {
+                  "item": "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (monitor and modeled data)",
+                  "count": 13
+                },
+                {
+                  "item": "Number of person-days with PM2.5 over the National Ambient Air Quality Standard (monitor and modeled data)",
+                  "count": 12
+                },
+                {
+                  "item": "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+                  "count": 11
+                }
+              ],
+              "smallest": "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)"
+            },
+            "format": {
+              "align": "left"
+            }
+          },
+          {
+            "id": 217182093,
+            "name": "MeasureType",
+            "dataTypeName": "text",
+            "description": "Type of data value being captured (e.g. Average, Count, Prevalence, etc.)",
+            "fieldName": "measuretype",
+            "position": 3,
+            "renderTypeName": "text",
+            "tableColumnId": 30482155,
+            "width": 151,
+            "cachedContents": {
+              "non_null": 218635,
+              "largest": "Percent",
+              "null": 0,
+              "top": [
+                {
+                  "item": "Counts",
+                  "count": 20
+                },
+                {
+                  "item": "Percent",
+                  "count": 19
+                },
+                {
+                  "item": "Average",
+                  "count": 18
+                }
+              ],
+              "smallest": "Average"
+            },
+            "format": {
+              "align": "left"
+            }
+          },
+          {
+            "id": 217182094,
+            "name": "StratificationLevel",
+            "dataTypeName": "text",
+            "description": "Geogrpahic resolution by which data is captured and presented",
+            "fieldName": "stratificationlevel",
+            "position": 4,
+            "renderTypeName": "text",
+            "tableColumnId": 30482156,
+            "width": 192,
+            "cachedContents": {
+              "non_null": 218635,
+              "largest": "State x County",
+              "null": 0,
+              "top": [
+                {
+                  "item": "State x County",
+                  "count": 20
+                }
+              ],
+              "smallest": "State x County"
+            },
+            "format": {
+              "align": "left"
+            }
+          },
+          {
+            "id": 217182095,
+            "name": "StateFips",
+            "dataTypeName": "text",
+            "description": "Unique two-digit numeric code assigned to each state in the United States.",
+            "fieldName": "statefips",
+            "position": 5,
+            "rdfProperties": "",
+            "renderTypeName": "text",
+            "tableColumnId": 30482157,
+            "width": 131,
+            "cachedContents": {
+              "non_null": 218635,
+              "largest": "9",
+              "null": 0,
+              "top": [
+                {
+                  "item": "1",
+                  "count": 20
+                },
+                {
+                  "item": "6",
+                  "count": 19
+                },
+                {
+                  "item": "8",
+                  "count": 18
+                },
+                {
+                  "item": "12",
+                  "count": 17
+                },
+                {
+                  "item": "13",
+                  "count": 16
+                },
+                {
+                  "item": "17",
+                  "count": 15
+                },
+                {
+                  "item": "18",
+                  "count": 14
+                },
+                {
+                  "item": "19",
+                  "count": 13
+                },
+                {
+                  "item": "21",
+                  "count": 12
+                },
+                {
+                  "item": "22",
+                  "count": 11
+                },
+                {
+                  "item": "26",
+                  "count": 10
+                },
+                {
+                  "item": "27",
+                  "count": 9
+                },
+                {
+                  "item": "28",
+                  "count": 8
+                },
+                {
+                  "item": "36",
+                  "count": 7
+                },
+                {
+                  "item": "37",
+                  "count": 6
+                },
+                {
+                  "item": "39",
+                  "count": 5
+                },
+                {
+                  "item": "40",
+                  "count": 4
+                },
+                {
+                  "item": "42",
+                  "count": 3
+                },
+                {
+                  "item": "45",
+                  "count": 2
+                },
+                {
+                  "item": "47",
+                  "count": 1
+                }
+              ],
+              "smallest": "1"
+            },
+            "format": {
+              "rdf": "",
+              "align": "left"
+            }
+          },
+          {
+            "id": 217182096,
+            "name": "StateName",
+            "dataTypeName": "text",
+            "description": "Name of state in the United States.",
+            "fieldName": "statename",
+            "position": 6,
+            "renderTypeName": "text",
+            "tableColumnId": 30482158,
+            "width": 130,
+            "cachedContents": {
+              "non_null": 218635,
+              "largest": "Wyoming",
+              "null": 0,
+              "top": [
+                {
+                  "item": "Alabama",
+                  "count": 20
+                },
+                {
+                  "item": "California",
+                  "count": 19
+                },
+                {
+                  "item": "Colorado",
+                  "count": 18
+                },
+                {
+                  "item": "Florida",
+                  "count": 17
+                },
+                {
+                  "item": "Georgia",
+                  "count": 16
+                },
+                {
+                  "item": "Illinois",
+                  "count": 15
+                },
+                {
+                  "item": "Indiana",
+                  "count": 14
+                },
+                {
+                  "item": "Iowa",
+                  "count": 13
+                },
+                {
+                  "item": "Kentucky",
+                  "count": 12
+                },
+                {
+                  "item": "Louisiana",
+                  "count": 11
+                },
+                {
+                  "item": "Michigan",
+                  "count": 10
+                },
+                {
+                  "item": "Minnesota",
+                  "count": 9
+                },
+                {
+                  "item": "Mississippi",
+                  "count": 8
+                },
+                {
+                  "item": "New York",
+                  "count": 7
+                },
+                {
+                  "item": "North Carolina",
+                  "count": 6
+                },
+                {
+                  "item": "Ohio",
+                  "count": 5
+                },
+                {
+                  "item": "Oklahoma",
+                  "count": 4
+                },
+                {
+                  "item": "Pennsylvania",
+                  "count": 3
+                },
+                {
+                  "item": "South Carolina",
+                  "count": 2
+                },
+                {
+                  "item": "Tennessee",
+                  "count": 1
+                }
+              ],
+              "smallest": "Alabama"
+            },
+            "format": {
+              "align": "left"
+            }
+          },
+          {
+            "id": 217182097,
+            "name": "CountyFips",
+            "dataTypeName": "text",
+            "description": "Unique five-digit code assigned to each county in the United States. The first two digits are the state FIPS code and the last three digits correspond to the county within that state.",
+            "fieldName": "countyfips",
+            "position": 7,
+            "renderTypeName": "text",
+            "tableColumnId": 30482159,
+            "width": 140,
+            "cachedContents": {
+              "non_null": 218635,
+              "largest": "9015",
+              "null": 0,
+              "top": [
+                {
+                  "item": "56035",
+                  "count": 20
+                },
+                {
+                  "item": "56037",
+                  "count": 19
+                },
+                {
+                  "item": "56039",
+                  "count": 18
+                },
+                {
+                  "item": "56041",
+                  "count": 17
+                },
+                {
+                  "item": "56043",
+                  "count": 16
+                },
+                {
+                  "item": "56045",
+                  "count": 15
+                }
+              ],
+              "smallest": "10001"
+            },
+            "format": {
+              "align": "left"
+            }
+          },
+          {
+            "id": 217182098,
+            "name": "CountyName",
+            "dataTypeName": "text",
+            "description": "Name of county within the state",
+            "fieldName": "countyname",
+            "position": 8,
+            "renderTypeName": "text",
+            "tableColumnId": 30482160,
+            "width": 151,
+            "cachedContents": {
+              "non_null": 218635,
+              "largest": "Ziebach",
+              "null": 0,
+              "top": [
+                {
+                  "item": "Sublette",
+                  "count": 20
+                },
+                {
+                  "item": "Sweetwater",
+                  "count": 19
+                },
+                {
+                  "item": "Teton",
+                  "count": 18
+                },
+                {
+                  "item": "Uinta",
+                  "count": 17
+                },
+                {
+                  "item": "Washakie",
+                  "count": 16
+                },
+                {
+                  "item": "Weston",
+                  "count": 15
+                }
+              ],
+              "smallest": "Abbeville"
+            },
+            "format": {
+              "align": "left"
+            }
+          },
+          {
+            "id": 217182099,
+            "name": "ReportYear",
+            "dataTypeName": "text",
+            "description": "Data report year",
+            "fieldName": "reportyear",
+            "position": 9,
+            "renderTypeName": "text",
+            "tableColumnId": 30482161,
+            "width": 143,
+            "cachedContents": {
+              "non_null": 218635,
+              "largest": "2013",
+              "null": 0,
+              "top": [
+                {
+                  "item": "1999",
+                  "count": 20
+                },
+                {
+                  "item": "2000",
+                  "count": 19
+                },
+                {
+                  "item": "2001",
+                  "count": 18
+                },
+                {
+                  "item": "2002",
+                  "count": 17
+                },
+                {
+                  "item": "2003",
+                  "count": 16
+                },
+                {
+                  "item": "2004",
+                  "count": 15
+                },
+                {
+                  "item": "2005",
+                  "count": 14
+                },
+                {
+                  "item": "2006",
+                  "count": 13
+                },
+                {
+                  "item": "2007",
+                  "count": 12
+                },
+                {
+                  "item": "2008",
+                  "count": 11
+                },
+                {
+                  "item": "2009",
+                  "count": 10
+                },
+                {
+                  "item": "2010",
+                  "count": 9
+                },
+                {
+                  "item": "2011",
+                  "count": 8
+                },
+                {
+                  "item": "2012",
+                  "count": 7
+                },
+                {
+                  "item": "2013",
+                  "count": 6
+                }
+              ],
+              "smallest": "1999"
+            },
+            "format": {
+              "align": "left"
+            }
+          },
+          {
+            "id": 217182100,
+            "name": "Value",
+            "dataTypeName": "number",
+            "description": "Data value specific to data measure in the stratified geography",
+            "fieldName": "value",
+            "position": 10,
+            "renderTypeName": "number",
+            "tableColumnId": 30482162,
+            "width": 110,
+            "cachedContents": {
+              "non_null": 218635,
+              "average": "649964.9118505982",
+              "largest": "1084153095",
+              "null": 0,
+              "top": [
+                {
+                  "item": "0",
+                  "count": 20
+                },
+                {
+                  "item": "1",
+                  "count": 19
+                },
+                {
+                  "item": "0.27397260273972601",
+                  "count": 18
+                },
+                {
+                  "item": "0.54794520547945202",
+                  "count": 17
+                },
+                {
+                  "item": "7.9151719205479401",
+                  "count": 16
+                },
+                {
+                  "item": "6.1315808356164396",
+                  "count": 15
+                },
+                {
+                  "item": "6.9196157205479496",
+                  "count": 14
+                },
+                {
+                  "item": "6.3236561366120299",
+                  "count": 13
+                },
+                {
+                  "item": "6.1095928054794504",
+                  "count": 12
+                },
+                {
+                  "item": "6.4436848054794504",
+                  "count": 11
+                },
+                {
+                  "item": "6.2071264410958902",
+                  "count": 10
+                },
+                {
+                  "item": "6.3697641557377098",
+                  "count": 9
+                },
+                {
+                  "item": "6.24170825753425",
+                  "count": 8
+                },
+                {
+                  "item": "6.1259572876712296",
+                  "count": 7
+                },
+                {
+                  "item": "6.6464644109588997",
+                  "count": 6
+                }
+              ],
+              "smallest": "0",
+              "sum": "142105078502.45554529049610238"
+            },
+            "format": {
+              "precisionStyle": "standard",
+              "noCommas": "false",
+              "align": "right"
+            }
+          },
+          {
+            "id": 217182101,
+            "name": "Unit",
+            "dataTypeName": "text",
+            "description": "Shorthand unit name for the specific measure",
+            "fieldName": "unit",
+            "position": 11,
+            "renderTypeName": "text",
+            "tableColumnId": 30482163,
+            "width": 103,
+            "cachedContents": {
+              "non_null": 218635,
+              "largest": "No Units",
+              "null": 0,
+              "top": [
+                {
+                  "item": "No Units",
+                  "count": 20
+                },
+                {
+                  "item": "%",
+                  "count": 19
+                },
+                {
+                  "item": "µg/m³",
+                  "count": 18
+                }
+              ],
+              "smallest": "%"
+            },
+            "format": {
+              "align": "left"
+            }
+          },
+          {
+            "id": 217182102,
+            "name": "UnitName",
+            "dataTypeName": "text",
+            "description": "Long unit name for the specific measure",
+            "fieldName": "unitname",
+            "position": 12,
+            "renderTypeName": "text",
+            "tableColumnId": 30482164,
+            "width": 135,
+            "cachedContents": {
+              "non_null": 218635,
+              "largest": "Percent",
+              "null": 0,
+              "top": [
+                {
+                  "item": "No Units",
+                  "count": 20
+                },
+                {
+                  "item": "Percent",
+                  "count": 19
+                },
+                {
+                  "item": "Micograms per cubic meter",
+                  "count": 18
+                }
+              ],
+              "smallest": "Micograms per cubic meter"
+            },
+            "format": {
+              "align": "left"
+            }
+          },
+          {
+            "id": 217182103,
+            "name": "DataOrigin",
+            "dataTypeName": "text",
+            "description": "Indicates if the data is monitor only (AQS data), or if it is monitor and modeled (with Downscaler modeled predictions for counties and days without monitoring data)",
+            "fieldName": "dataorigin",
+            "position": 13,
+            "renderTypeName": "text",
+            "tableColumnId": 30482165,
+            "width": 137,
+            "cachedContents": {
+              "non_null": 218635,
+              "largest": "Monitor Only",
+              "null": 0,
+              "top": [
+                {
+                  "item": "Monitor Only",
+                  "count": 20
+                },
+                {
+                  "item": "Monitor & Modeled",
+                  "count": 19
+                }
+              ],
+              "smallest": "Monitor & Modeled"
+            },
+            "format": {
+              "align": "left"
+            }
+          },
+          {
+            "id": 217182104,
+            "name": "MonitorOnly",
+            "dataTypeName": "number",
+            "description": "Flags if data is Monitor only, compared to monitor and modeled data.",
+            "fieldName": "monitoronly",
+            "position": 14,
+            "renderTypeName": "number",
+            "tableColumnId": 30482166,
+            "width": 149,
+            "cachedContents": {
+              "non_null": 218635,
+              "average": "0.3839504196491870",
+              "largest": "1",
+              "null": 0,
+              "top": [
+                {
+                  "item": "1",
+                  "count": 20
+                },
+                {
+                  "item": "0",
+                  "count": 19
+                }
+              ],
+              "smallest": "0",
+              "sum": "83945"
+            },
+            "format": {
+              "precisionStyle": "standard",
+              "noCommas": "false",
+              "align": "right"
+            }
+          }
+        ]
+      }
+    },
+    "data": [
+      [
+        "row-8eh8_xxkx-u3mq",
+        "00000000-0000-0000-A1B7-70E47BCE5354",
+        0,
+        1439382361,
+        null,
+        1439382361,
+        null,
+        "{ }",
+        "83",
+        "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard",
+        "Counts",
+        "State x County",
+        "1",
+        "Alabama",
+        "1027",
+        "Clay",
+        "1999",
+        "33",
+        "No Units",
+        "No Units",
+        "Monitor Only",
+        "1"
+      ],
+      [
+        "row-sif4~bnzx-vjwu",
+        "00000000-0000-0000-0B7C-D179455B3141",
+        0,
+        1439382361,
+        null,
+        1439382361,
+        null,
+        "{ }",
+        "296",
+        "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+        "Average",
+        "State x County",
+        "8",
+        "Colorado",
+        "8041",
+        "El Paso",
+        "2001",
+        "8.5079811287671205",
+        "µg/m³",
+        "Micograms per cubic meter",
+        "Monitor Only",
+        "1"
+      ],
+      [
+        "row-p97j~zsm6-m8q2",
+        "00000000-0000-0000-7828-3EC2B0843024",
+        0,
+        1439382361,
+        null,
+        1439382361,
+        null,
+        "{ }",
+        "296",
+        "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+        "Average",
+        "State x County",
+        "8",
+        "Colorado",
+        "8041",
+        "El Paso",
+        "2002",
+        "8.2234841452054894",
+        "µg/m³",
+        "Micograms per cubic meter",
+        "Monitor Only",
+        "1"
+      ],
+      [
+        "row-ynsv~sy9j-sdnq",
+        "00000000-0000-0000-6928-7B6B4A3EDC52",
+        0,
+        1439382361,
+        null,
+        1439382361,
+        null,
+        "{ }",
+        "296",
+        "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+        "Average",
+        "State x County",
+        "8",
+        "Colorado",
+        "8041",
+        "El Paso",
+        "2003",
+        "8.2678474958904093",
+        "µg/m³",
+        "Micograms per cubic meter",
+        "Monitor Only",
+        "1"
+      ],
+      [
+        "row-hnce-zncu-x2zj",
+        "00000000-0000-0000-C51D-94F7E1E5A1F2",
+        0,
+        1439382361,
+        null,
+        1439382361,
+        null,
+        "{ }",
+        "296",
+        "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+        "Average",
+        "State x County",
+        "8",
+        "Colorado",
+        "8041",
+        "El Paso",
+        "2004",
+        "8.6095065901639494",
+        "µg/m³",
+        "Micograms per cubic meter",
+        "Monitor Only",
+        "1"
+      ],
+      [
+        "row-gtw3.mds7.n4nb",
+        "00000000-0000-0000-3D78-9B56CF665490",
+        0,
+        1439382361,
+        null,
+        1439382361,
+        null,
+        "{ }",
+        "296",
+        "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+        "Average",
+        "State x County",
+        "8",
+        "Colorado",
+        "8041",
+        "El Paso",
+        "2005",
+        "8.1365949342465704",
+        "µg/m³",
+        "Micograms per cubic meter",
+        "Monitor Only",
+        "1"
+      ],
+      [
+        "row-k6dc~axwn-p4bt",
+        "00000000-0000-0000-F472-9DE134748A48",
+        0,
+        1439382361,
+        null,
+        1439382361,
+        null,
+        "{ }",
+        "296",
+        "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+        "Average",
+        "State x County",
+        "8",
+        "Colorado",
+        "8041",
+        "El Paso",
+        "2006",
+        "8.03256692054795",
+        "µg/m³",
+        "Micograms per cubic meter",
+        "Monitor Only",
+        "1"
+      ],
+      [
+        "row-4xeq.ch7h_uu6s",
+        "00000000-0000-0000-B043-81A25E760B07",
+        0,
+        1439382361,
+        null,
+        1439382361,
+        null,
+        "{ }",
+        "296",
+        "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+        "Average",
+        "State x County",
+        "8",
+        "Colorado",
+        "8041",
+        "El Paso",
+        "2007",
+        "8.0700956027397304",
+        "µg/m³",
+        "Micograms per cubic meter",
+        "Monitor Only",
+        "1"
+      ],
+      [
+        "row-xrt9~wyt6-xrbc",
+        "00000000-0000-0000-A170-3DC767EAC90F",
+        0,
+        1439382361,
+        null,
+        1439382361,
+        null,
+        "{ }",
+        "296",
+        "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+        "Average",
+        "State x County",
+        "8",
+        "Colorado",
+        "8041",
+        "El Paso",
+        "2008",
+        "7.4646344071038104",
+        "µg/m³",
+        "Micograms per cubic meter",
+        "Monitor Only",
+        "1"
+      ],
+      [
+        "row-2xzy~ykaw~6yt9",
+        "00000000-0000-0000-C47C-4B3D547BC036",
+        0,
+        1439382361,
+        null,
+        1439382361,
+        null,
+        "{ }",
+        "296",
+        "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+        "Average",
+        "State x County",
+        "8",
+        "Colorado",
+        "8041",
+        "El Paso",
+        "2009",
+        "7.1611940438356196",
+        "µg/m³",
+        "Micograms per cubic meter",
+        "Monitor Only",
+        "1"
+      ],
+      [
+        "row-9j7i-spup-68wi",
+        "00000000-0000-0000-6A2D-51FB60D919C3",
+        0,
+        1439382361,
+        null,
+        1439382361,
+        null,
+        "{ }",
+        "296",
+        "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+        "Average",
+        "State x County",
+        "8",
+        "Colorado",
+        "8041",
+        "El Paso",
+        "2010",
+        "7.3616518191780802",
+        "µg/m³",
+        "Micograms per cubic meter",
+        "Monitor Only",
+        "1"
+      ],
+      [
+        "row-t3r3~7hff_bkhh",
+        "00000000-0000-0000-AE14-1EE3907FD4BE",
+        0,
+        1439382361,
+        null,
+        1439382361,
+        null,
+        "{ }",
+        "296",
+        "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+        "Average",
+        "State x County",
+        "8",
+        "Colorado",
+        "8041",
+        "El Paso",
+        "2011",
+        "6.3071477068493103",
+        "µg/m³",
+        "Micograms per cubic meter",
+        "Monitor Only",
+        "1"
+      ]
+    ]
+  }
