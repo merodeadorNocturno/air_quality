@@ -2,7 +2,6 @@ extern crate serde_json;
 
 use serde::Deserialize;
 use serde_json::Value as JsonValue;
-// use serde_json::Value::Null;
 
 use std::fs::File;
 use std::io::prelude::*;
@@ -72,16 +71,6 @@ pub fn get_air_values(filepath: &str) -> JsonValue {
     air_quality
 }
 
-// pub fn create_column_vector(columns: JsonValue) -> Vec<String> {
-//     let mut column_vector: Vec<String> = Vec::new();
-
-//     for index in 0..21 {
-//         column_vector.push(columns[index]["name"].to_string());
-//     }
-
-//     column_vector
-// }
-
 pub fn create_data_vector(data: JsonValue) -> Vec<UsefulData> {
     let mut data_vector: Vec<UsefulData> = Vec::new();
     let air_data_array: Vec<AirData> = serde_json::from_value(data).unwrap();
@@ -109,47 +98,13 @@ pub fn create_data_vector(data: JsonValue) -> Vec<UsefulData> {
     data_vector
 }
 
-pub fn join_data(my_data: Vec<AirData>) -> Vec<UsefulData> {
-    let mut _my_data: Vec<UsefulData> = Vec::new();
-
-    for _data in my_data {
-        // println!("{}", _data.measure_name);
-        let useful_data = UsefulData {
-            measure_id: _data.measure_id,
-            measure_name: _data.measure_name,
-            measure_type: _data.measure_type,
-            stratification_level: _data.stratification_level,
-            state_fips: _data.state_fips,
-            state_name: _data.state_name,
-            county_fips: _data.county_fips,
-            county_name: _data.county_name,
-            report_year: _data.report_year,
-            value: _data.value,
-            unit: _data.unit,
-            unit_name: _data.unit_name,
-            data_origin: _data.data_origin,
-            monitor_only: _data.monitor_only,
-        };
-        _my_data.push(useful_data);
-    }
-
-    _my_data
-}
-
 fn main() {
     let init = Instant::now();
     let filepath = "/home/tonatiuh.martinez/Development/rust/air_quality/json_files/airQuality.json";
     let air_json: JsonValue = get_air_values(&filepath);
 
-    // let _columns = create_column_vector(air_json["meta"]["view"]["columns"].clone());
-    let data = &air_json["data"];
-
-    // println!("{}", _columns[0]);
-
-    let _my_data = create_data_vector(data.clone());
-
-    // join_data(_my_data);
-
+    let _my_data = create_data_vector(air_json["data"].clone());
     let ended = Instant::now();
     println!("Rust: {:?}", ended.duration_since(init));
+    println!("{}", _my_data.len());
 }

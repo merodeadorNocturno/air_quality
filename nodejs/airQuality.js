@@ -1,5 +1,5 @@
 console.time('node:');
-const airQuality = require('../json_files/sample.json');
+const airQuality = require('../json_files/airQuality.json');
 
 const createColumnVector = (aq) => {
     const myColumns = aq.meta.view.columns;
