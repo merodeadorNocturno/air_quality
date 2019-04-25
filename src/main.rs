@@ -1,11 +1,10 @@
 extern crate serde_json;
+mod my_fs;
+
+use my_fs::load_file::read_file;
 
 use serde::Deserialize;
 use serde_json::Value as JsonValue;
-
-use std::fs::File;
-use std::io::prelude::*;
-use std::io::BufReader;
 
 use std::time::Instant;
 
@@ -52,20 +51,8 @@ pub struct UsefulData {
     monitor_only: String,
 }
 
-pub fn read_file(filepath: &str) -> String {
-    let file = File::open(filepath).expect("could not open file::");
-    let mut buffered_reader = BufReader::new(file);
-    let mut contents = String::new();
-    let _number_of_bytes: usize = match buffered_reader.read_to_string(&mut contents) {
-        Ok(_number_of_bytes) => _number_of_bytes,
-        Err(_err) => 0,
-    };
-
-    contents
-}
-
 pub fn get_air_values(filepath: &str) -> JsonValue {
-    let my_json = read_file(filepath);
+    let my_json: String = read_file(filepath);
     let air_quality = serde_json::from_str(&my_json).unwrap();
 
     air_quality
@@ -103,7 +90,17 @@ fn main() {
     let filepath = "/home/tonatiuh.martinez/Development/rust/air_quality/json_files/airQuality.json";
     let air_json: JsonValue = get_air_values(&filepath);
 
-    let _my_data = create_data_vector(air_json["data"].clone());
+    let _county_name: String = "Union".to_string();
+    let _measure_id: String = "292".to_string();
+    let _report_year: String = "2011".to_string();
+
+
+    let _my_data: Vec<UsefulData> = create_data_vector(air_json["data"].clone())
+        .into_iter()
+        // .filter(|my_item| my_item.county_name == _county_name)
+        .filter(|my_item| my_item.measure_id == _measure_id)
+        .filter(|my_item| my_item.report_year == _report_year)
+        .collect();
     let ended = Instant::now();
     println!("Rust: {:?}", ended.duration_since(init));
     println!("{}", _my_data.len());

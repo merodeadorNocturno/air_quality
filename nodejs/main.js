@@ -2,6 +2,11 @@ console.time('nodeStatic:');
 const airQuality = require('../json_files/airQuality.json');
 
 const straightData = (data) => {
+
+    const countyName = 'Union';
+    const measureId = '292';
+    const reportYear = '2011';
+
     return data
     .map(col => col
         .filter((item, index) => index > 7)
@@ -21,8 +26,15 @@ const straightData = (data) => {
         unit_name: item[11],
         data_origin: item[12],
         monitor_only: item[13],
-    }));
+    }))
+    // .filter(item => item.county_name === countyName)
+    .filter(item => item.measure_id === measureId)
+    .filter(item => item.report_year === reportYear);
+
 };
 
-straightData(airQuality.data);
+const dataArray = straightData(airQuality.data);
 console.timeEnd('nodeStatic:');
+console.log(dataArray.length);
+
+// console.log(dataArray[0].measure_id);
