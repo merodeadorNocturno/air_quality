@@ -11,14 +11,14 @@ use std::time::Instant;
 use air_objects::air_data::AirData;
 use air_objects::air_data::UsefulData;
 
-pub fn get_air_values(filepath: &str) -> JsonValue {
+fn get_air_values(filepath: &str) -> JsonValue {
     let my_json: String = read_file(filepath);
     let air_quality = serde_json::from_str(&my_json).unwrap();
 
     air_quality
 }
 
-pub fn create_data_vector(data: JsonValue) -> Vec<UsefulData> {
+fn create_data_vector(data: JsonValue) -> Vec<UsefulData> {
     let mut data_vector: Vec<UsefulData> = Vec::new();
     let air_data_array: Vec<AirData> = serde_json::from_value(data).unwrap();
 
@@ -45,7 +45,7 @@ pub fn create_data_vector(data: JsonValue) -> Vec<UsefulData> {
     data_vector
 }
 
-pub fn reducer(my_data: &Vec<UsefulData>) -> f64 {
+fn reducer(my_data: &Vec<UsefulData>) -> f64 {
     let sum_value: f64 = my_data.iter().fold(0.0, |sum, x| sum + x.value);
     let _len = my_data.len();
 
