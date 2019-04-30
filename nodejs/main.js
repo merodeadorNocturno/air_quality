@@ -1,36 +1,44 @@
 console.time('nodeStatic:');
 const airQuality = require('../json_files/airQuality.json');
 
+const reducer = (data) => {
+    const redux = (accumulator, currentValue) => accumulator + currentValue.value;
+    const sum_value = data.reduce(redux, 0);
+    return sum_value / data.length;
+}
+
 const straightData = (data) => {
 
-    const countyName = 'Union';
-    const measureId = '292';
-    const reportYear = '2011';
+    // const countyName = 'El Paso';
+    // const reportYear = 2012;
+    const measureId = 292;
 
-    return data
+    const myData = data
     .map(col => col
         .filter((item, index) => index > 7)
     )
     .map(item => ({
-        measure_id: item[0],
+        measure_id: parseInt(item[0]),
         measure_name: item[1],
         measure_type: item[2],
         stratification_level: item[3],
-        state_fips: item[4],
+        state_fips: parseInt(item[4]),
         state_name: item[5],
-        county_fips: item[6],
+        county_fips: parseInt(item[6]),
         county_name: item[7],
-        report_year: item[8],
-        value: item[9],
+        report_year: parseInt(item[8]),
+        value: parseFloat(item[9]),
         unit: item[10],
         unit_name: item[11],
         data_origin: item[12],
-        monitor_only: item[13],
+        monitor_only: parseInt(item[13]),
     }))
-    // .filter(item => item.county_name === countyName)
+    // .filter(item => item.value > 1 && item.measure_id === measureId)
     .filter(item => item.measure_id === measureId)
-    .filter(item => item.report_year === reportYear);
 
+    console.log(`Average: ${reducer(myData)}`);
+
+    return myData;
 };
 
 const dataArray = straightData(airQuality.data);
