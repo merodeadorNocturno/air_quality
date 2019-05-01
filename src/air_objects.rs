@@ -27,6 +27,7 @@ pub mod air_data {
     pub monitor_only: String,
   }
 
+  #[derive(Debug)]
   pub struct UsefulData {
     pub measure_id: u16,
     pub measure_name: String,
