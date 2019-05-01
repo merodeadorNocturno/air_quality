@@ -8,8 +8,7 @@ use serde_json::Value as JsonValue;
 
 use std::time::Instant;
 
-use air_objects::air_data::AirData;
-use air_objects::air_data::UsefulData;
+use air_objects::air_data::{AirData, UsefulData};
 
 use itertools::Itertools;
 
@@ -105,7 +104,6 @@ fn filter_by_type(data: &Vec<UsefulData>, my_type: String) -> Vec<UsefulData> {
     }
 
     my_reference
-
 }
 
 fn main() {
@@ -139,9 +137,7 @@ fn main() {
     println!("\tTotal Percent registers: {}", &_pct_vector.len());
     println!("\tAverage in Percent: {}", &_avg_pct);
     println!(" ");
-    println!("\tTotal Average registers {}:", &_avg_vector.len());
+    println!("\tTotal Average registers: {}", &_avg_vector.len());
     println!("\tAverage in Average: {}", &_avg_avg);
     println!(" ");
-
-
 }
