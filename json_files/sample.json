@@ -1,948 +1,932 @@
 {
-    "meta": {
-      "view": {
-        "columns": [
-          {
-            "id": -1,
-            "name": "sid",
-            "dataTypeName": "meta_data",
-            "fieldName": ":sid",
-            "position": 0,
-            "renderTypeName": "meta_data",
-            "format": {},
-            "flags": [
-              "hidden"
-            ]
+  "meta": {
+    "view": {
+      "columns": [{
+          "id": -1,
+          "name": "sid",
+          "dataTypeName": "meta_data",
+          "fieldName": ":sid",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "id",
+          "dataTypeName": "meta_data",
+          "fieldName": ":id",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "position",
+          "dataTypeName": "meta_data",
+          "fieldName": ":position",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "created_at",
+          "dataTypeName": "meta_data",
+          "fieldName": ":created_at",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "created_meta",
+          "dataTypeName": "meta_data",
+          "fieldName": ":created_meta",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "updated_at",
+          "dataTypeName": "meta_data",
+          "fieldName": ":updated_at",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "updated_meta",
+          "dataTypeName": "meta_data",
+          "fieldName": ":updated_meta",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "meta",
+          "dataTypeName": "meta_data",
+          "fieldName": ":meta",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": 217182091,
+          "name": "MeasureId",
+          "dataTypeName": "number",
+          "description": "Unique identifier for Measure Name used within the Environmental Health Tracking Network",
+          "fieldName": "measureid",
+          "position": 1,
+          "renderTypeName": "number",
+          "tableColumnId": 30482153,
+          "width": 138,
+          "cachedContents": {
+            "non_null": 218635,
+            "average": "248.4369794406202",
+            "largest": "296",
+            "null": 0,
+            "top": [{
+                "item": "83",
+                "count": 20
+              },
+              {
+                "item": "84",
+                "count": 19
+              },
+              {
+                "item": "85",
+                "count": 18
+              },
+              {
+                "item": "86",
+                "count": 17
+              },
+              {
+                "item": "87",
+                "count": 16
+              },
+              {
+                "item": "292",
+                "count": 15
+              },
+              {
+                "item": "293",
+                "count": 14
+              },
+              {
+                "item": "294",
+                "count": 13
+              },
+              {
+                "item": "295",
+                "count": 12
+              },
+              {
+                "item": "296",
+                "count": 11
+              }
+            ],
+            "smallest": "83",
+            "sum": "54317019"
           },
-          {
-            "id": -1,
-            "name": "id",
-            "dataTypeName": "meta_data",
-            "fieldName": ":id",
-            "position": 0,
-            "renderTypeName": "meta_data",
-            "format": {},
-            "flags": [
-              "hidden"
-            ]
-          },
-          {
-            "id": -1,
-            "name": "position",
-            "dataTypeName": "meta_data",
-            "fieldName": ":position",
-            "position": 0,
-            "renderTypeName": "meta_data",
-            "format": {},
-            "flags": [
-              "hidden"
-            ]
-          },
-          {
-            "id": -1,
-            "name": "created_at",
-            "dataTypeName": "meta_data",
-            "fieldName": ":created_at",
-            "position": 0,
-            "renderTypeName": "meta_data",
-            "format": {},
-            "flags": [
-              "hidden"
-            ]
-          },
-          {
-            "id": -1,
-            "name": "created_meta",
-            "dataTypeName": "meta_data",
-            "fieldName": ":created_meta",
-            "position": 0,
-            "renderTypeName": "meta_data",
-            "format": {},
-            "flags": [
-              "hidden"
-            ]
-          },
-          {
-            "id": -1,
-            "name": "updated_at",
-            "dataTypeName": "meta_data",
-            "fieldName": ":updated_at",
-            "position": 0,
-            "renderTypeName": "meta_data",
-            "format": {},
-            "flags": [
-              "hidden"
-            ]
-          },
-          {
-            "id": -1,
-            "name": "updated_meta",
-            "dataTypeName": "meta_data",
-            "fieldName": ":updated_meta",
-            "position": 0,
-            "renderTypeName": "meta_data",
-            "format": {},
-            "flags": [
-              "hidden"
-            ]
-          },
-          {
-            "id": -1,
-            "name": "meta",
-            "dataTypeName": "meta_data",
-            "fieldName": ":meta",
-            "position": 0,
-            "renderTypeName": "meta_data",
-            "format": {},
-            "flags": [
-              "hidden"
-            ]
-          },
-          {
-            "id": 217182091,
-            "name": "MeasureId",
-            "dataTypeName": "number",
-            "description": "Unique identifier for Measure Name used within the Environmental Health Tracking Network",
-            "fieldName": "measureid",
-            "position": 1,
-            "renderTypeName": "number",
-            "tableColumnId": 30482153,
-            "width": 138,
-            "cachedContents": {
-              "non_null": 218635,
-              "average": "248.4369794406202",
-              "largest": "296",
-              "null": 0,
-              "top": [
-                {
-                  "item": "83",
-                  "count": 20
-                },
-                {
-                  "item": "84",
-                  "count": 19
-                },
-                {
-                  "item": "85",
-                  "count": 18
-                },
-                {
-                  "item": "86",
-                  "count": 17
-                },
-                {
-                  "item": "87",
-                  "count": 16
-                },
-                {
-                  "item": "292",
-                  "count": 15
-                },
-                {
-                  "item": "293",
-                  "count": 14
-                },
-                {
-                  "item": "294",
-                  "count": 13
-                },
-                {
-                  "item": "295",
-                  "count": 12
-                },
-                {
-                  "item": "296",
-                  "count": 11
-                }
-              ],
-              "smallest": "83",
-              "sum": "54317019"
-            },
-            "format": {
-              "precisionStyle": "standard",
-              "noCommas": "false",
-              "align": "right"
-            }
-          },
-          {
-            "id": 217182092,
-            "name": "MeasureName",
-            "dataTypeName": "text",
-            "description": "Unique name created by National Environmental Health Tracking Network to identify and clearly describe data presented",
-            "fieldName": "measurename",
-            "position": 2,
-            "renderTypeName": "text",
-            "tableColumnId": 30482154,
-            "width": 232,
-            "cachedContents": {
-              "non_null": 218635,
-              "largest": "Person-days with PM2.5 over the National Ambient Air Quality Standard",
-              "null": 0,
-              "top": [
-                {
-                  "item": "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard",
-                  "count": 20
-                },
-                {
-                  "item": "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard",
-                  "count": 19
-                },
-                {
-                  "item": "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)",
-                  "count": 18
-                },
-                {
-                  "item": "Person-days with PM2.5 over the National Ambient Air Quality Standard",
-                  "count": 17
-                },
-                {
-                  "item": "Annual average ambient concentrations of PM2.5 in micrograms per cubic meter (based on seasonal averages and daily measurement)",
-                  "count": 16
-                },
-                {
-                  "item": "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard (monitor and modeled data)",
-                  "count": 15
-                },
-                {
-                  "item": "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard (monitor and modeled data)",
-                  "count": 14
-                },
-                {
-                  "item": "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (monitor and modeled data)",
-                  "count": 13
-                },
-                {
-                  "item": "Number of person-days with PM2.5 over the National Ambient Air Quality Standard (monitor and modeled data)",
-                  "count": 12
-                },
-                {
-                  "item": "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
-                  "count": 11
-                }
-              ],
-              "smallest": "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)"
-            },
-            "format": {
-              "align": "left"
-            }
-          },
-          {
-            "id": 217182093,
-            "name": "MeasureType",
-            "dataTypeName": "text",
-            "description": "Type of data value being captured (e.g. Average, Count, Prevalence, etc.)",
-            "fieldName": "measuretype",
-            "position": 3,
-            "renderTypeName": "text",
-            "tableColumnId": 30482155,
-            "width": 151,
-            "cachedContents": {
-              "non_null": 218635,
-              "largest": "Percent",
-              "null": 0,
-              "top": [
-                {
-                  "item": "Counts",
-                  "count": 20
-                },
-                {
-                  "item": "Percent",
-                  "count": 19
-                },
-                {
-                  "item": "Average",
-                  "count": 18
-                }
-              ],
-              "smallest": "Average"
-            },
-            "format": {
-              "align": "left"
-            }
-          },
-          {
-            "id": 217182094,
-            "name": "StratificationLevel",
-            "dataTypeName": "text",
-            "description": "Geogrpahic resolution by which data is captured and presented",
-            "fieldName": "stratificationlevel",
-            "position": 4,
-            "renderTypeName": "text",
-            "tableColumnId": 30482156,
-            "width": 192,
-            "cachedContents": {
-              "non_null": 218635,
-              "largest": "State x County",
-              "null": 0,
-              "top": [
-                {
-                  "item": "State x County",
-                  "count": 20
-                }
-              ],
-              "smallest": "State x County"
-            },
-            "format": {
-              "align": "left"
-            }
-          },
-          {
-            "id": 217182095,
-            "name": "StateFips",
-            "dataTypeName": "text",
-            "description": "Unique two-digit numeric code assigned to each state in the United States.",
-            "fieldName": "statefips",
-            "position": 5,
-            "rdfProperties": "",
-            "renderTypeName": "text",
-            "tableColumnId": 30482157,
-            "width": 131,
-            "cachedContents": {
-              "non_null": 218635,
-              "largest": "9",
-              "null": 0,
-              "top": [
-                {
-                  "item": "1",
-                  "count": 20
-                },
-                {
-                  "item": "6",
-                  "count": 19
-                },
-                {
-                  "item": "8",
-                  "count": 18
-                },
-                {
-                  "item": "12",
-                  "count": 17
-                },
-                {
-                  "item": "13",
-                  "count": 16
-                },
-                {
-                  "item": "17",
-                  "count": 15
-                },
-                {
-                  "item": "18",
-                  "count": 14
-                },
-                {
-                  "item": "19",
-                  "count": 13
-                },
-                {
-                  "item": "21",
-                  "count": 12
-                },
-                {
-                  "item": "22",
-                  "count": 11
-                },
-                {
-                  "item": "26",
-                  "count": 10
-                },
-                {
-                  "item": "27",
-                  "count": 9
-                },
-                {
-                  "item": "28",
-                  "count": 8
-                },
-                {
-                  "item": "36",
-                  "count": 7
-                },
-                {
-                  "item": "37",
-                  "count": 6
-                },
-                {
-                  "item": "39",
-                  "count": 5
-                },
-                {
-                  "item": "40",
-                  "count": 4
-                },
-                {
-                  "item": "42",
-                  "count": 3
-                },
-                {
-                  "item": "45",
-                  "count": 2
-                },
-                {
-                  "item": "47",
-                  "count": 1
-                }
-              ],
-              "smallest": "1"
-            },
-            "format": {
-              "rdf": "",
-              "align": "left"
-            }
-          },
-          {
-            "id": 217182096,
-            "name": "StateName",
-            "dataTypeName": "text",
-            "description": "Name of state in the United States.",
-            "fieldName": "statename",
-            "position": 6,
-            "renderTypeName": "text",
-            "tableColumnId": 30482158,
-            "width": 130,
-            "cachedContents": {
-              "non_null": 218635,
-              "largest": "Wyoming",
-              "null": 0,
-              "top": [
-                {
-                  "item": "Alabama",
-                  "count": 20
-                },
-                {
-                  "item": "California",
-                  "count": 19
-                },
-                {
-                  "item": "Colorado",
-                  "count": 18
-                },
-                {
-                  "item": "Florida",
-                  "count": 17
-                },
-                {
-                  "item": "Georgia",
-                  "count": 16
-                },
-                {
-                  "item": "Illinois",
-                  "count": 15
-                },
-                {
-                  "item": "Indiana",
-                  "count": 14
-                },
-                {
-                  "item": "Iowa",
-                  "count": 13
-                },
-                {
-                  "item": "Kentucky",
-                  "count": 12
-                },
-                {
-                  "item": "Louisiana",
-                  "count": 11
-                },
-                {
-                  "item": "Michigan",
-                  "count": 10
-                },
-                {
-                  "item": "Minnesota",
-                  "count": 9
-                },
-                {
-                  "item": "Mississippi",
-                  "count": 8
-                },
-                {
-                  "item": "New York",
-                  "count": 7
-                },
-                {
-                  "item": "North Carolina",
-                  "count": 6
-                },
-                {
-                  "item": "Ohio",
-                  "count": 5
-                },
-                {
-                  "item": "Oklahoma",
-                  "count": 4
-                },
-                {
-                  "item": "Pennsylvania",
-                  "count": 3
-                },
-                {
-                  "item": "South Carolina",
-                  "count": 2
-                },
-                {
-                  "item": "Tennessee",
-                  "count": 1
-                }
-              ],
-              "smallest": "Alabama"
-            },
-            "format": {
-              "align": "left"
-            }
-          },
-          {
-            "id": 217182097,
-            "name": "CountyFips",
-            "dataTypeName": "text",
-            "description": "Unique five-digit code assigned to each county in the United States. The first two digits are the state FIPS code and the last three digits correspond to the county within that state.",
-            "fieldName": "countyfips",
-            "position": 7,
-            "renderTypeName": "text",
-            "tableColumnId": 30482159,
-            "width": 140,
-            "cachedContents": {
-              "non_null": 218635,
-              "largest": "9015",
-              "null": 0,
-              "top": [
-                {
-                  "item": "56035",
-                  "count": 20
-                },
-                {
-                  "item": "56037",
-                  "count": 19
-                },
-                {
-                  "item": "56039",
-                  "count": 18
-                },
-                {
-                  "item": "56041",
-                  "count": 17
-                },
-                {
-                  "item": "56043",
-                  "count": 16
-                },
-                {
-                  "item": "56045",
-                  "count": 15
-                }
-              ],
-              "smallest": "10001"
-            },
-            "format": {
-              "align": "left"
-            }
-          },
-          {
-            "id": 217182098,
-            "name": "CountyName",
-            "dataTypeName": "text",
-            "description": "Name of county within the state",
-            "fieldName": "countyname",
-            "position": 8,
-            "renderTypeName": "text",
-            "tableColumnId": 30482160,
-            "width": 151,
-            "cachedContents": {
-              "non_null": 218635,
-              "largest": "Ziebach",
-              "null": 0,
-              "top": [
-                {
-                  "item": "Sublette",
-                  "count": 20
-                },
-                {
-                  "item": "Sweetwater",
-                  "count": 19
-                },
-                {
-                  "item": "Teton",
-                  "count": 18
-                },
-                {
-                  "item": "Uinta",
-                  "count": 17
-                },
-                {
-                  "item": "Washakie",
-                  "count": 16
-                },
-                {
-                  "item": "Weston",
-                  "count": 15
-                }
-              ],
-              "smallest": "Abbeville"
-            },
-            "format": {
-              "align": "left"
-            }
-          },
-          {
-            "id": 217182099,
-            "name": "ReportYear",
-            "dataTypeName": "text",
-            "description": "Data report year",
-            "fieldName": "reportyear",
-            "position": 9,
-            "renderTypeName": "text",
-            "tableColumnId": 30482161,
-            "width": 143,
-            "cachedContents": {
-              "non_null": 218635,
-              "largest": "2013",
-              "null": 0,
-              "top": [
-                {
-                  "item": "1999",
-                  "count": 20
-                },
-                {
-                  "item": "2000",
-                  "count": 19
-                },
-                {
-                  "item": "2001",
-                  "count": 18
-                },
-                {
-                  "item": "2002",
-                  "count": 17
-                },
-                {
-                  "item": "2003",
-                  "count": 16
-                },
-                {
-                  "item": "2004",
-                  "count": 15
-                },
-                {
-                  "item": "2005",
-                  "count": 14
-                },
-                {
-                  "item": "2006",
-                  "count": 13
-                },
-                {
-                  "item": "2007",
-                  "count": 12
-                },
-                {
-                  "item": "2008",
-                  "count": 11
-                },
-                {
-                  "item": "2009",
-                  "count": 10
-                },
-                {
-                  "item": "2010",
-                  "count": 9
-                },
-                {
-                  "item": "2011",
-                  "count": 8
-                },
-                {
-                  "item": "2012",
-                  "count": 7
-                },
-                {
-                  "item": "2013",
-                  "count": 6
-                }
-              ],
-              "smallest": "1999"
-            },
-            "format": {
-              "align": "left"
-            }
-          },
-          {
-            "id": 217182100,
-            "name": "Value",
-            "dataTypeName": "number",
-            "description": "Data value specific to data measure in the stratified geography",
-            "fieldName": "value",
-            "position": 10,
-            "renderTypeName": "number",
-            "tableColumnId": 30482162,
-            "width": 110,
-            "cachedContents": {
-              "non_null": 218635,
-              "average": "649964.9118505982",
-              "largest": "1084153095",
-              "null": 0,
-              "top": [
-                {
-                  "item": "0",
-                  "count": 20
-                },
-                {
-                  "item": "1",
-                  "count": 19
-                },
-                {
-                  "item": "0.27397260273972601",
-                  "count": 18
-                },
-                {
-                  "item": "0.54794520547945202",
-                  "count": 17
-                },
-                {
-                  "item": "7.9151719205479401",
-                  "count": 16
-                },
-                {
-                  "item": "6.1315808356164396",
-                  "count": 15
-                },
-                {
-                  "item": "6.9196157205479496",
-                  "count": 14
-                },
-                {
-                  "item": "6.3236561366120299",
-                  "count": 13
-                },
-                {
-                  "item": "6.1095928054794504",
-                  "count": 12
-                },
-                {
-                  "item": "6.4436848054794504",
-                  "count": 11
-                },
-                {
-                  "item": "6.2071264410958902",
-                  "count": 10
-                },
-                {
-                  "item": "6.3697641557377098",
-                  "count": 9
-                },
-                {
-                  "item": "6.24170825753425",
-                  "count": 8
-                },
-                {
-                  "item": "6.1259572876712296",
-                  "count": 7
-                },
-                {
-                  "item": "6.6464644109588997",
-                  "count": 6
-                }
-              ],
-              "smallest": "0",
-              "sum": "142105078502.45554529049610238"
-            },
-            "format": {
-              "precisionStyle": "standard",
-              "noCommas": "false",
-              "align": "right"
-            }
-          },
-          {
-            "id": 217182101,
-            "name": "Unit",
-            "dataTypeName": "text",
-            "description": "Shorthand unit name for the specific measure",
-            "fieldName": "unit",
-            "position": 11,
-            "renderTypeName": "text",
-            "tableColumnId": 30482163,
-            "width": 103,
-            "cachedContents": {
-              "non_null": 218635,
-              "largest": "No Units",
-              "null": 0,
-              "top": [
-                {
-                  "item": "No Units",
-                  "count": 20
-                },
-                {
-                  "item": "%",
-                  "count": 19
-                },
-                {
-                  "item": "µg/m³",
-                  "count": 18
-                }
-              ],
-              "smallest": "%"
-            },
-            "format": {
-              "align": "left"
-            }
-          },
-          {
-            "id": 217182102,
-            "name": "UnitName",
-            "dataTypeName": "text",
-            "description": "Long unit name for the specific measure",
-            "fieldName": "unitname",
-            "position": 12,
-            "renderTypeName": "text",
-            "tableColumnId": 30482164,
-            "width": 135,
-            "cachedContents": {
-              "non_null": 218635,
-              "largest": "Percent",
-              "null": 0,
-              "top": [
-                {
-                  "item": "No Units",
-                  "count": 20
-                },
-                {
-                  "item": "Percent",
-                  "count": 19
-                },
-                {
-                  "item": "Micograms per cubic meter",
-                  "count": 18
-                }
-              ],
-              "smallest": "Micograms per cubic meter"
-            },
-            "format": {
-              "align": "left"
-            }
-          },
-          {
-            "id": 217182103,
-            "name": "DataOrigin",
-            "dataTypeName": "text",
-            "description": "Indicates if the data is monitor only (AQS data), or if it is monitor and modeled (with Downscaler modeled predictions for counties and days without monitoring data)",
-            "fieldName": "dataorigin",
-            "position": 13,
-            "renderTypeName": "text",
-            "tableColumnId": 30482165,
-            "width": 137,
-            "cachedContents": {
-              "non_null": 218635,
-              "largest": "Monitor Only",
-              "null": 0,
-              "top": [
-                {
-                  "item": "Monitor Only",
-                  "count": 20
-                },
-                {
-                  "item": "Monitor & Modeled",
-                  "count": 19
-                }
-              ],
-              "smallest": "Monitor & Modeled"
-            },
-            "format": {
-              "align": "left"
-            }
-          },
-          {
-            "id": 217182104,
-            "name": "MonitorOnly",
-            "dataTypeName": "number",
-            "description": "Flags if data is Monitor only, compared to monitor and modeled data.",
-            "fieldName": "monitoronly",
-            "position": 14,
-            "renderTypeName": "number",
-            "tableColumnId": 30482166,
-            "width": 149,
-            "cachedContents": {
-              "non_null": 218635,
-              "average": "0.3839504196491870",
-              "largest": "1",
-              "null": 0,
-              "top": [
-                {
-                  "item": "1",
-                  "count": 20
-                },
-                {
-                  "item": "0",
-                  "count": 19
-                }
-              ],
-              "smallest": "0",
-              "sum": "83945"
-            },
-            "format": {
-              "precisionStyle": "standard",
-              "noCommas": "false",
-              "align": "right"
-            }
+          "format": {
+            "precisionStyle": "standard",
+            "noCommas": "false",
+            "align": "right"
           }
-        ]
-      }
-    },
-    "data": [
-      [ "row-pb2d-jqdz~k4n5", "00000000-0000-0000-DE18-6CE49B820E23", 0, 1439382361, null, 1439382361, null, "{ }", "84", "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1103", "Morgan", "2013", "0", "No Units", "No Units", "Monitor Only", "1" ]
-    , [ "row-4jtn-zre8-ku4r", "00000000-0000-0000-ED42-9AB633E17CC6", 0, 1439382361, null, 1439382361, null, "{ }", "84", "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1113", "Russell", "2013", "0", "No Units", "No Units", "Monitor Only", "1" ]
-    , [ "row-8wvw-a9u6.vgfp", "00000000-0000-0000-3228-C609FE0939D8", 0, 1439382361, null, 1439382361, null, "{ }", "84", "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1117", "Shelby", "2013", "0", "No Units", "No Units", "Monitor Only", "1" ]
-    , [ "row-njaf-9etf_qhtz", "00000000-0000-0000-9646-80350D1E99BE", 0, 1439382361, null, 1439382361, null, "{ }", "84", "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1119", "Sumter", "2013", "0", "No Units", "No Units", "Monitor Only", "1" ]
-    , [ "row-zmhw-j8qz.dbr6", "00000000-0000-0000-2B6B-2AB0A7378AEE", 0, 1439382361, null, 1439382361, null, "{ }", "84", "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1125", "Tuscaloosa", "2013", "0", "No Units", "No Units", "Monitor Only", "1" ]
-    , [ "row-wjij~wjk2-aggy", "00000000-0000-0000-12BC-51F90F45330F", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1089", "Madison", "2009", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-78p9_t4zp~3nys", "00000000-0000-0000-463E-6021DAE1491B", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1069", "Houston", "2008", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-dpeh~dvcm_e45e", "00000000-0000-0000-DE1B-2AA0B975D6E7", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1121", "Talladega", "2003", "0.934579439252336", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-e3hz.5pt8-ukgq", "00000000-0000-0000-80D7-B333EB46F407", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1121", "Talladega", "2010", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-5jus.x3bf~eaye", "00000000-0000-0000-3D44-2174D0C679CD", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1097", "Mobile", "2006", "0.81967213114754101", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-6myq_5si8_saq3", "00000000-0000-0000-33A0-6BDB85384BDF", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1069", "Houston", "2012", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-ustw_rs2x~cnyu", "00000000-0000-0000-3485-0749AFB63FB8", 0, 1439382361, null, 1439382361, null, "{ }", "86", "Person-days with PM2.5 over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1089", "Madison", "2009", "0", "No Units", "No Units", "Monitor Only", "1" ]
-    , [ "row-btw7_wi33_xhs9", "00000000-0000-0000-66D6-20E544BCAEA8", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1121", "Talladega", "2004", "1.7543859649122799", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-dwyn~x4pv~rje4", "00000000-0000-0000-1D10-AC93D14EEA48", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1101", "Montgomery", "2006", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-2p99-ke6w.dnqp", "00000000-0000-0000-DABB-ED6D72EE0340", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1117", "Shelby", "2006", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-8u3z~772w.6ifd", "00000000-0000-0000-564A-9A91367D6485", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1113", "Russell", "2008", "0.60606060606060597", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-8ktz-9u3p~f82v", "00000000-0000-0000-5894-28A86870167C", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1113", "Russell", "2001", "0.952380952380952", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-crw7_3pue.af9h", "00000000-0000-0000-5469-FC362231D187", 0, 1439382361, null, 1439382361, null, "{ }", "86", "Person-days with PM2.5 over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1113", "Russell", "2008", "113778", "No Units", "No Units", "Monitor Only", "1" ]
-    , [ "row-s5j6-fybg~axwf", "00000000-0000-0000-03F3-40D0E0143974", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1113", "Russell", "2002", "1.0204081632653099", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-6gmz-c33e~yd26", "00000000-0000-0000-0FD3-086695A8E79F", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1053", "Escambia", "2006", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-kwt6-jxq6.etrc", "00000000-0000-0000-3754-EF518D774BF7", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1027", "Clay", "2004", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-sh5n-jxq2-p5dj", "00000000-0000-0000-9542-034618CCD355", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1003", "Baldwin", "2008", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-38v5-kwxy~5em8", "00000000-0000-0000-BF49-97CDE25CFEF9", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1119", "Sumter", "1999", "6.25", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-f7fq-e5pd-j3k7", "00000000-0000-0000-58CC-0B0B423C8C7D", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1003", "Baldwin", "2000", "2.3529411764705901", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-nhgj~3kbn_dyu2", "00000000-0000-0000-F739-5E68C026CF0B", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1033", "Colbert", "2000", "1.88679245283019", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-yntw~8xs5~hrhn", "00000000-0000-0000-3DDD-794C576CAFFB", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1073", "Jefferson", "2011", "0.55096418732782404", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-aji2.yqqp~vgsy", "00000000-0000-0000-128B-672268EEEF9D", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1117", "Shelby", "2004", "2.52100840336134", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-zgt2-fni3~j9p2", "00000000-0000-0000-25B4-7185FC2C4B62", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1117", "Shelby", "2011", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-fgee-z38x~9vd7", "00000000-0000-0000-4FB4-9B8F5DF76A68", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1073", "Jefferson", "2004", "6.5573770491803298", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-bdph-yu7y.3tpe", "00000000-0000-0000-D913-F563DA476084", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1033", "Colbert", "2005", "1.70940170940171", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-zdzq-22bj.ez3x", "00000000-0000-0000-41AF-0B8EAC73AC4D", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1003", "Baldwin", "2009", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-e2eh.p7ae~245c", "00000000-0000-0000-12A2-C184475009FA", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1049", "DeKalb", "2001", "0.89285714285714302", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-wuvt.t6wr~5zmq", "00000000-0000-0000-667E-EFF784E37E2D", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1089", "Madison", "2005", "2.5", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-6yre-y9kv_gwtd", "00000000-0000-0000-A4DC-0566618B7306", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1055", "Etowah", "2013", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-wdzv~byum~hn8a", "00000000-0000-0000-4669-F1D7EE72294F", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1003", "Baldwin", "2010", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-vy9z_dm7a-vi45", "00000000-0000-0000-EB8B-47B4BE9FAD78", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1033", "Colbert", "2002", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-smdt-4ukw~ft3d", "00000000-0000-0000-BDD9-A045B16C2844", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1049", "DeKalb", "2003", "0.86956521739130399", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-bxm4_es49_apcw", "00000000-0000-0000-5E4B-686E6A4EC13E", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1101", "Montgomery", "2007", "2.2435897435897401", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-3zg9.ifiz-c9mg", "00000000-0000-0000-9D46-DA4BECD02748", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1055", "Etowah", "2000", "8.4337349397590398", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-sa9p.kp3v-3jxw", "00000000-0000-0000-FE0B-07834F6645B3", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1127", "Walker", "2008", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-c68q.ajtp.mh77", "00000000-0000-0000-A611-AA7EA204A423", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1119", "Sumter", "2002", "0.90090090090090102", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-tst2-jc8f_pcy8", "00000000-0000-0000-CD0C-9E78DE5913A4", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1055", "Etowah", "2008", "0.31545741324921101", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-w87i.8e9m_8j7z", "00000000-0000-0000-096C-9F1AF90885C5", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1125", "Tuscaloosa", "2009", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-c7dw_df7v-2k6g", "00000000-0000-0000-DA34-1EE89259C7E2", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1003", "Baldwin", "2004", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-kqwp.xg39~e2q4", "00000000-0000-0000-D959-287FC2A84AA3", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1127", "Walker", "1999", "7.9545454545454497", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-8xfm_mzr2-n7si", "00000000-0000-0000-7E29-FF666CB54698", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1127", "Walker", "2000", "3.0769230769230802", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-tn28.znim_jfum", "00000000-0000-0000-2AB0-8228E8D86297", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1073", "Jefferson", "2002", "5.75342465753425", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-f4bx-xx7h~qkmm", "00000000-0000-0000-E561-B561D5372005", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1027", "Clay", "2012", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-sn59_e3px-8cyq", "00000000-0000-0000-E972-9282CE5A8423", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1027", "Clay", "2001", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-85q6~hvbm.ksys", "00000000-0000-0000-4AB2-34D4A3AF2ECB", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1119", "Sumter", "2004", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-kyrm~fxnm~uug6", "00000000-0000-0000-B7EF-4E5D8696DEAC", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1125", "Tuscaloosa", "2003", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-uafz~wgtp~c4xq", "00000000-0000-0000-70B8-B9385EA8A598", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1069", "Houston", "2006", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-bqnk~p67p.drd3", "00000000-0000-0000-B1DD-D972D44038D6", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1101", "Montgomery", "2009", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-3fzw_pf8x-urad", "00000000-0000-0000-B5A5-38D17ADBDCAF", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1117", "Shelby", "2012", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-nm4k~2d55.vu7j", "00000000-0000-0000-F66E-2B886DECE6CB", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1097", "Mobile", "2013", "0", "%", "Percent", "Monitor Only", "1" ]
-    , [ "row-jx6e~4gpi~q8b2", "00000000-0000-0000-10BE-E4CFBF979880", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1069", "Houston", "2000", "1.0638297872340401", "%", "Percent", "Monitor Only", "1" ]
+        },
+        {
+          "id": 217182092,
+          "name": "MeasureName",
+          "dataTypeName": "text",
+          "description": "Unique name created by National Environmental Health Tracking Network to identify and clearly describe data presented",
+          "fieldName": "measurename",
+          "position": 2,
+          "renderTypeName": "text",
+          "tableColumnId": 30482154,
+          "width": 232,
+          "cachedContents": {
+            "non_null": 218635,
+            "largest": "Person-days with PM2.5 over the National Ambient Air Quality Standard",
+            "null": 0,
+            "top": [{
+                "item": "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard",
+                "count": 20
+              },
+              {
+                "item": "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard",
+                "count": 19
+              },
+              {
+                "item": "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)",
+                "count": 18
+              },
+              {
+                "item": "Person-days with PM2.5 over the National Ambient Air Quality Standard",
+                "count": 17
+              },
+              {
+                "item": "Annual average ambient concentrations of PM2.5 in micrograms per cubic meter (based on seasonal averages and daily measurement)",
+                "count": 16
+              },
+              {
+                "item": "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard (monitor and modeled data)",
+                "count": 15
+              },
+              {
+                "item": "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard (monitor and modeled data)",
+                "count": 14
+              },
+              {
+                "item": "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (monitor and modeled data)",
+                "count": 13
+              },
+              {
+                "item": "Number of person-days with PM2.5 over the National Ambient Air Quality Standard (monitor and modeled data)",
+                "count": 12
+              },
+              {
+                "item": "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)",
+                "count": 11
+              }
+            ],
+            "smallest": "Annual average ambient concentrations of PM 2.5 in micrograms per cubic meter, based on seasonal averages and daily measurement (monitor and modeled data)"
+          },
+          "format": {
+            "align": "left"
+          }
+        },
+        {
+          "id": 217182093,
+          "name": "MeasureType",
+          "dataTypeName": "text",
+          "description": "Type of data value being captured (e.g. Average, Count, Prevalence, etc.)",
+          "fieldName": "measuretype",
+          "position": 3,
+          "renderTypeName": "text",
+          "tableColumnId": 30482155,
+          "width": 151,
+          "cachedContents": {
+            "non_null": 218635,
+            "largest": "Percent",
+            "null": 0,
+            "top": [{
+                "item": "Counts",
+                "count": 20
+              },
+              {
+                "item": "Percent",
+                "count": 19
+              },
+              {
+                "item": "Average",
+                "count": 18
+              }
+            ],
+            "smallest": "Average"
+          },
+          "format": {
+            "align": "left"
+          }
+        },
+        {
+          "id": 217182094,
+          "name": "StratificationLevel",
+          "dataTypeName": "text",
+          "description": "Geogrpahic resolution by which data is captured and presented",
+          "fieldName": "stratificationlevel",
+          "position": 4,
+          "renderTypeName": "text",
+          "tableColumnId": 30482156,
+          "width": 192,
+          "cachedContents": {
+            "non_null": 218635,
+            "largest": "State x County",
+            "null": 0,
+            "top": [{
+              "item": "State x County",
+              "count": 20
+            }],
+            "smallest": "State x County"
+          },
+          "format": {
+            "align": "left"
+          }
+        },
+        {
+          "id": 217182095,
+          "name": "StateFips",
+          "dataTypeName": "text",
+          "description": "Unique two-digit numeric code assigned to each state in the United States.",
+          "fieldName": "statefips",
+          "position": 5,
+          "rdfProperties": "",
+          "renderTypeName": "text",
+          "tableColumnId": 30482157,
+          "width": 131,
+          "cachedContents": {
+            "non_null": 218635,
+            "largest": "9",
+            "null": 0,
+            "top": [{
+                "item": "1",
+                "count": 20
+              },
+              {
+                "item": "6",
+                "count": 19
+              },
+              {
+                "item": "8",
+                "count": 18
+              },
+              {
+                "item": "12",
+                "count": 17
+              },
+              {
+                "item": "13",
+                "count": 16
+              },
+              {
+                "item": "17",
+                "count": 15
+              },
+              {
+                "item": "18",
+                "count": 14
+              },
+              {
+                "item": "19",
+                "count": 13
+              },
+              {
+                "item": "21",
+                "count": 12
+              },
+              {
+                "item": "22",
+                "count": 11
+              },
+              {
+                "item": "26",
+                "count": 10
+              },
+              {
+                "item": "27",
+                "count": 9
+              },
+              {
+                "item": "28",
+                "count": 8
+              },
+              {
+                "item": "36",
+                "count": 7
+              },
+              {
+                "item": "37",
+                "count": 6
+              },
+              {
+                "item": "39",
+                "count": 5
+              },
+              {
+                "item": "40",
+                "count": 4
+              },
+              {
+                "item": "42",
+                "count": 3
+              },
+              {
+                "item": "45",
+                "count": 2
+              },
+              {
+                "item": "47",
+                "count": 1
+              }
+            ],
+            "smallest": "1"
+          },
+          "format": {
+            "rdf": "",
+            "align": "left"
+          }
+        },
+        {
+          "id": 217182096,
+          "name": "StateName",
+          "dataTypeName": "text",
+          "description": "Name of state in the United States.",
+          "fieldName": "statename",
+          "position": 6,
+          "renderTypeName": "text",
+          "tableColumnId": 30482158,
+          "width": 130,
+          "cachedContents": {
+            "non_null": 218635,
+            "largest": "Wyoming",
+            "null": 0,
+            "top": [{
+                "item": "Alabama",
+                "count": 20
+              },
+              {
+                "item": "California",
+                "count": 19
+              },
+              {
+                "item": "Colorado",
+                "count": 18
+              },
+              {
+                "item": "Florida",
+                "count": 17
+              },
+              {
+                "item": "Georgia",
+                "count": 16
+              },
+              {
+                "item": "Illinois",
+                "count": 15
+              },
+              {
+                "item": "Indiana",
+                "count": 14
+              },
+              {
+                "item": "Iowa",
+                "count": 13
+              },
+              {
+                "item": "Kentucky",
+                "count": 12
+              },
+              {
+                "item": "Louisiana",
+                "count": 11
+              },
+              {
+                "item": "Michigan",
+                "count": 10
+              },
+              {
+                "item": "Minnesota",
+                "count": 9
+              },
+              {
+                "item": "Mississippi",
+                "count": 8
+              },
+              {
+                "item": "New York",
+                "count": 7
+              },
+              {
+                "item": "North Carolina",
+                "count": 6
+              },
+              {
+                "item": "Ohio",
+                "count": 5
+              },
+              {
+                "item": "Oklahoma",
+                "count": 4
+              },
+              {
+                "item": "Pennsylvania",
+                "count": 3
+              },
+              {
+                "item": "South Carolina",
+                "count": 2
+              },
+              {
+                "item": "Tennessee",
+                "count": 1
+              }
+            ],
+            "smallest": "Alabama"
+          },
+          "format": {
+            "align": "left"
+          }
+        },
+        {
+          "id": 217182097,
+          "name": "CountyFips",
+          "dataTypeName": "text",
+          "description": "Unique five-digit code assigned to each county in the United States. The first two digits are the state FIPS code and the last three digits correspond to the county within that state.",
+          "fieldName": "countyfips",
+          "position": 7,
+          "renderTypeName": "text",
+          "tableColumnId": 30482159,
+          "width": 140,
+          "cachedContents": {
+            "non_null": 218635,
+            "largest": "9015",
+            "null": 0,
+            "top": [{
+                "item": "56035",
+                "count": 20
+              },
+              {
+                "item": "56037",
+                "count": 19
+              },
+              {
+                "item": "56039",
+                "count": 18
+              },
+              {
+                "item": "56041",
+                "count": 17
+              },
+              {
+                "item": "56043",
+                "count": 16
+              },
+              {
+                "item": "56045",
+                "count": 15
+              }
+            ],
+            "smallest": "10001"
+          },
+          "format": {
+            "align": "left"
+          }
+        },
+        {
+          "id": 217182098,
+          "name": "CountyName",
+          "dataTypeName": "text",
+          "description": "Name of county within the state",
+          "fieldName": "countyname",
+          "position": 8,
+          "renderTypeName": "text",
+          "tableColumnId": 30482160,
+          "width": 151,
+          "cachedContents": {
+            "non_null": 218635,
+            "largest": "Ziebach",
+            "null": 0,
+            "top": [{
+                "item": "Sublette",
+                "count": 20
+              },
+              {
+                "item": "Sweetwater",
+                "count": 19
+              },
+              {
+                "item": "Teton",
+                "count": 18
+              },
+              {
+                "item": "Uinta",
+                "count": 17
+              },
+              {
+                "item": "Washakie",
+                "count": 16
+              },
+              {
+                "item": "Weston",
+                "count": 15
+              }
+            ],
+            "smallest": "Abbeville"
+          },
+          "format": {
+            "align": "left"
+          }
+        },
+        {
+          "id": 217182099,
+          "name": "ReportYear",
+          "dataTypeName": "text",
+          "description": "Data report year",
+          "fieldName": "reportyear",
+          "position": 9,
+          "renderTypeName": "text",
+          "tableColumnId": 30482161,
+          "width": 143,
+          "cachedContents": {
+            "non_null": 218635,
+            "largest": "2013",
+            "null": 0,
+            "top": [{
+                "item": "1999",
+                "count": 20
+              },
+              {
+                "item": "2000",
+                "count": 19
+              },
+              {
+                "item": "2001",
+                "count": 18
+              },
+              {
+                "item": "2002",
+                "count": 17
+              },
+              {
+                "item": "2003",
+                "count": 16
+              },
+              {
+                "item": "2004",
+                "count": 15
+              },
+              {
+                "item": "2005",
+                "count": 14
+              },
+              {
+                "item": "2006",
+                "count": 13
+              },
+              {
+                "item": "2007",
+                "count": 12
+              },
+              {
+                "item": "2008",
+                "count": 11
+              },
+              {
+                "item": "2009",
+                "count": 10
+              },
+              {
+                "item": "2010",
+                "count": 9
+              },
+              {
+                "item": "2011",
+                "count": 8
+              },
+              {
+                "item": "2012",
+                "count": 7
+              },
+              {
+                "item": "2013",
+                "count": 6
+              }
+            ],
+            "smallest": "1999"
+          },
+          "format": {
+            "align": "left"
+          }
+        },
+        {
+          "id": 217182100,
+          "name": "Value",
+          "dataTypeName": "number",
+          "description": "Data value specific to data measure in the stratified geography",
+          "fieldName": "value",
+          "position": 10,
+          "renderTypeName": "number",
+          "tableColumnId": 30482162,
+          "width": 110,
+          "cachedContents": {
+            "non_null": 218635,
+            "average": "649964.9118505982",
+            "largest": "1084153095",
+            "null": 0,
+            "top": [{
+                "item": "0",
+                "count": 20
+              },
+              {
+                "item": "1",
+                "count": 19
+              },
+              {
+                "item": "0.27397260273972601",
+                "count": 18
+              },
+              {
+                "item": "0.54794520547945202",
+                "count": 17
+              },
+              {
+                "item": "7.9151719205479401",
+                "count": 16
+              },
+              {
+                "item": "6.1315808356164396",
+                "count": 15
+              },
+              {
+                "item": "6.9196157205479496",
+                "count": 14
+              },
+              {
+                "item": "6.3236561366120299",
+                "count": 13
+              },
+              {
+                "item": "6.1095928054794504",
+                "count": 12
+              },
+              {
+                "item": "6.4436848054794504",
+                "count": 11
+              },
+              {
+                "item": "6.2071264410958902",
+                "count": 10
+              },
+              {
+                "item": "6.3697641557377098",
+                "count": 9
+              },
+              {
+                "item": "6.24170825753425",
+                "count": 8
+              },
+              {
+                "item": "6.1259572876712296",
+                "count": 7
+              },
+              {
+                "item": "6.6464644109588997",
+                "count": 6
+              }
+            ],
+            "smallest": "0",
+            "sum": "142105078502.45554529049610238"
+          },
+          "format": {
+            "precisionStyle": "standard",
+            "noCommas": "false",
+            "align": "right"
+          }
+        },
+        {
+          "id": 217182101,
+          "name": "Unit",
+          "dataTypeName": "text",
+          "description": "Shorthand unit name for the specific measure",
+          "fieldName": "unit",
+          "position": 11,
+          "renderTypeName": "text",
+          "tableColumnId": 30482163,
+          "width": 103,
+          "cachedContents": {
+            "non_null": 218635,
+            "largest": "No Units",
+            "null": 0,
+            "top": [{
+                "item": "No Units",
+                "count": 20
+              },
+              {
+                "item": "%",
+                "count": 19
+              },
+              {
+                "item": "µg/m³",
+                "count": 18
+              }
+            ],
+            "smallest": "%"
+          },
+          "format": {
+            "align": "left"
+          }
+        },
+        {
+          "id": 217182102,
+          "name": "UnitName",
+          "dataTypeName": "text",
+          "description": "Long unit name for the specific measure",
+          "fieldName": "unitname",
+          "position": 12,
+          "renderTypeName": "text",
+          "tableColumnId": 30482164,
+          "width": 135,
+          "cachedContents": {
+            "non_null": 218635,
+            "largest": "Percent",
+            "null": 0,
+            "top": [{
+                "item": "No Units",
+                "count": 20
+              },
+              {
+                "item": "Percent",
+                "count": 19
+              },
+              {
+                "item": "Micograms per cubic meter",
+                "count": 18
+              }
+            ],
+            "smallest": "Micograms per cubic meter"
+          },
+          "format": {
+            "align": "left"
+          }
+        },
+        {
+          "id": 217182103,
+          "name": "DataOrigin",
+          "dataTypeName": "text",
+          "description": "Indicates if the data is monitor only (AQS data), or if it is monitor and modeled (with Downscaler modeled predictions for counties and days without monitoring data)",
+          "fieldName": "dataorigin",
+          "position": 13,
+          "renderTypeName": "text",
+          "tableColumnId": 30482165,
+          "width": 137,
+          "cachedContents": {
+            "non_null": 218635,
+            "largest": "Monitor Only",
+            "null": 0,
+            "top": [{
+                "item": "Monitor Only",
+                "count": 20
+              },
+              {
+                "item": "Monitor & Modeled",
+                "count": 19
+              }
+            ],
+            "smallest": "Monitor & Modeled"
+          },
+          "format": {
+            "align": "left"
+          }
+        },
+        {
+          "id": 217182104,
+          "name": "MonitorOnly",
+          "dataTypeName": "number",
+          "description": "Flags if data is Monitor only, compared to monitor and modeled data.",
+          "fieldName": "monitoronly",
+          "position": 14,
+          "renderTypeName": "number",
+          "tableColumnId": 30482166,
+          "width": 149,
+          "cachedContents": {
+            "non_null": 218635,
+            "average": "0.3839504196491870",
+            "largest": "1",
+            "null": 0,
+            "top": [{
+                "item": "1",
+                "count": 20
+              },
+              {
+                "item": "0",
+                "count": 19
+              }
+            ],
+            "smallest": "0",
+            "sum": "83945"
+          },
+          "format": {
+            "precisionStyle": "standard",
+            "noCommas": "false",
+            "align": "right"
+          }
+        }
+      ]
+    }
+  },
+  "data": [
+    ["row-pb2d-jqdz~k4n5", "00000000-0000-0000-DE18-6CE49B820E23", 0, 1439382361, null, 1439382361, null, "{ }", "84", "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1103", "Morgan", "2013", "0", "No Units", "No Units", "Monitor Only", "1"],
+    ["row-4jtn-zre8-ku4r", "00000000-0000-0000-ED42-9AB633E17CC6", 0, 1439382361, null, 1439382361, null, "{ }", "84", "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1113", "Russell", "2013", "0", "No Units", "No Units", "Monitor Only", "1"],
+    ["row-8wvw-a9u6.vgfp", "00000000-0000-0000-3228-C609FE0939D8", 0, 1439382361, null, 1439382361, null, "{ }", "84", "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1117", "Shelby", "2013", "0", "No Units", "No Units", "Monitor Only", "1"],
+    ["row-njaf-9etf_qhtz", "00000000-0000-0000-9646-80350D1E99BE", 0, 1439382361, null, 1439382361, null, "{ }", "84", "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1119", "Sumter", "2013", "0", "No Units", "No Units", "Monitor Only", "1"],
+    ["row-zmhw-j8qz.dbr6", "00000000-0000-0000-2B6B-2AB0A7378AEE", 0, 1439382361, null, 1439382361, null, "{ }", "84", "Number of person-days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1125", "Tuscaloosa", "2013", "0", "No Units", "No Units", "Monitor Only", "1"],
+    ["row-wjij~wjk2-aggy", "00000000-0000-0000-12BC-51F90F45330F", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1089", "Madison", "2009", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-78p9_t4zp~3nys", "00000000-0000-0000-463E-6021DAE1491B", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1069", "Houston", "2008", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-dpeh~dvcm_e45e", "00000000-0000-0000-DE1B-2AA0B975D6E7", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1121", "Talladega", "2003", "0.934579439252336", "%", "Percent", "Monitor Only", "1"],
+    ["row-e3hz.5pt8-ukgq", "00000000-0000-0000-80D7-B333EB46F407", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1121", "Talladega", "2010", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-5jus.x3bf~eaye", "00000000-0000-0000-3D44-2174D0C679CD", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1097", "Mobile", "2006", "0.81967213114754101", "%", "Percent", "Monitor Only", "1"],
+    ["row-6myq_5si8_saq3", "00000000-0000-0000-33A0-6BDB85384BDF", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1069", "Houston", "2012", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-ustw_rs2x~cnyu", "00000000-0000-0000-3485-0749AFB63FB8", 0, 1439382361, null, 1439382361, null, "{ }", "86", "Person-days with PM2.5 over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1089", "Madison", "2009", "0", "No Units", "No Units", "Monitor Only", "1"],
+    ["row-btw7_wi33_xhs9", "00000000-0000-0000-66D6-20E544BCAEA8", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1121", "Talladega", "2004", "1.7543859649122799", "%", "Percent", "Monitor Only", "1"],
+    ["row-dwyn~x4pv~rje4", "00000000-0000-0000-1D10-AC93D14EEA48", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1101", "Montgomery", "2006", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-2p99-ke6w.dnqp", "00000000-0000-0000-DABB-ED6D72EE0340", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1117", "Shelby", "2006", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-8u3z~772w.6ifd", "00000000-0000-0000-564A-9A91367D6485", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1113", "Russell", "2008", "0.60606060606060597", "%", "Percent", "Monitor Only", "1"],
+    ["row-8ktz-9u3p~f82v", "00000000-0000-0000-5894-28A86870167C", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1113", "Russell", "2001", "0.952380952380952", "%", "Percent", "Monitor Only", "1"],
+    ["row-crw7_3pue.af9h", "00000000-0000-0000-5469-FC362231D187", 0, 1439382361, null, 1439382361, null, "{ }", "86", "Person-days with PM2.5 over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1113", "Russell", "2008", "113778", "No Units", "No Units", "Monitor Only", "1"],
+    ["row-s5j6-fybg~axwf", "00000000-0000-0000-03F3-40D0E0143974", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1113", "Russell", "2002", "1.0204081632653099", "%", "Percent", "Monitor Only", "1"],
+    ["row-6gmz-c33e~yd26", "00000000-0000-0000-0FD3-086695A8E79F", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1053", "Escambia", "2006", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-kwt6-jxq6.etrc", "00000000-0000-0000-3754-EF518D774BF7", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1027", "Clay", "2004", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-sh5n-jxq2-p5dj", "00000000-0000-0000-9542-034618CCD355", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1003", "Baldwin", "2008", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-38v5-kwxy~5em8", "00000000-0000-0000-BF49-97CDE25CFEF9", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1119", "Sumter", "1999", "6.25", "%", "Percent", "Monitor Only", "1"],
+    ["row-f7fq-e5pd-j3k7", "00000000-0000-0000-58CC-0B0B423C8C7D", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1003", "Baldwin", "2000", "2.3529411764705901", "%", "Percent", "Monitor Only", "1"],
+    ["row-nhgj~3kbn_dyu2", "00000000-0000-0000-F739-5E68C026CF0B", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1033", "Colbert", "2000", "1.88679245283019", "%", "Percent", "Monitor Only", "1"],
+    ["row-yntw~8xs5~hrhn", "00000000-0000-0000-3DDD-794C576CAFFB", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1073", "Jefferson", "2011", "0.55096418732782404", "%", "Percent", "Monitor Only", "1"],
+    ["row-aji2.yqqp~vgsy", "00000000-0000-0000-128B-672268EEEF9D", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1117", "Shelby", "2004", "2.52100840336134", "%", "Percent", "Monitor Only", "1"],
+    ["row-zgt2-fni3~j9p2", "00000000-0000-0000-25B4-7185FC2C4B62", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1117", "Shelby", "2011", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-fgee-z38x~9vd7", "00000000-0000-0000-4FB4-9B8F5DF76A68", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1073", "Jefferson", "2004", "6.5573770491803298", "%", "Percent", "Monitor Only", "1"],
+    ["row-bdph-yu7y.3tpe", "00000000-0000-0000-D913-F563DA476084", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1033", "Colbert", "2005", "1.70940170940171", "%", "Percent", "Monitor Only", "1"],
+    ["row-zdzq-22bj.ez3x", "00000000-0000-0000-41AF-0B8EAC73AC4D", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1003", "Baldwin", "2009", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-e2eh.p7ae~245c", "00000000-0000-0000-12A2-C184475009FA", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1049", "DeKalb", "2001", "0.89285714285714302", "%", "Percent", "Monitor Only", "1"],
+    ["row-wuvt.t6wr~5zmq", "00000000-0000-0000-667E-EFF784E37E2D", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1089", "Madison", "2005", "2.5", "%", "Percent", "Monitor Only", "1"],
+    ["row-6yre-y9kv_gwtd", "00000000-0000-0000-A4DC-0566618B7306", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1055", "Etowah", "2013", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-wdzv~byum~hn8a", "00000000-0000-0000-4669-F1D7EE72294F", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1003", "Baldwin", "2010", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-vy9z_dm7a-vi45", "00000000-0000-0000-EB8B-47B4BE9FAD78", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1033", "Colbert", "2002", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-smdt-4ukw~ft3d", "00000000-0000-0000-BDD9-A045B16C2844", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1049", "DeKalb", "2003", "0.86956521739130399", "%", "Percent", "Monitor Only", "1"],
+    ["row-bxm4_es49_apcw", "00000000-0000-0000-5E4B-686E6A4EC13E", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1101", "Montgomery", "2007", "2.2435897435897401", "%", "Percent", "Monitor Only", "1"],
+    ["row-3zg9.ifiz-c9mg", "00000000-0000-0000-9D46-DA4BECD02748", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1055", "Etowah", "2000", "8.4337349397590398", "%", "Percent", "Monitor Only", "1"],
+    ["row-sa9p.kp3v-3jxw", "00000000-0000-0000-FE0B-07834F6645B3", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1127", "Walker", "2008", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-c68q.ajtp.mh77", "00000000-0000-0000-A611-AA7EA204A423", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1119", "Sumter", "2002", "0.90090090090090102", "%", "Percent", "Monitor Only", "1"],
+    ["row-tst2-jc8f_pcy8", "00000000-0000-0000-CD0C-9E78DE5913A4", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1055", "Etowah", "2008", "0.31545741324921101", "%", "Percent", "Monitor Only", "1"],
+    ["row-w87i.8e9m_8j7z", "00000000-0000-0000-096C-9F1AF90885C5", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1125", "Tuscaloosa", "2009", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-c7dw_df7v-2k6g", "00000000-0000-0000-DA34-1EE89259C7E2", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1003", "Baldwin", "2004", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-kqwp.xg39~e2q4", "00000000-0000-0000-D959-287FC2A84AA3", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1127", "Walker", "1999", "7.9545454545454497", "%", "Percent", "Monitor Only", "1"],
+    ["row-8xfm_mzr2-n7si", "00000000-0000-0000-7E29-FF666CB54698", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1127", "Walker", "2000", "3.0769230769230802", "%", "Percent", "Monitor Only", "1"],
+    ["row-tn28.znim_jfum", "00000000-0000-0000-2AB0-8228E8D86297", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1073", "Jefferson", "2002", "5.75342465753425", "%", "Percent", "Monitor Only", "1"],
+    ["row-f4bx-xx7h~qkmm", "00000000-0000-0000-E561-B561D5372005", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1027", "Clay", "2012", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-sn59_e3px-8cyq", "00000000-0000-0000-E972-9282CE5A8423", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1027", "Clay", "2001", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-85q6~hvbm.ksys", "00000000-0000-0000-4AB2-34D4A3AF2ECB", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1119", "Sumter", "2004", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-kyrm~fxnm~uug6", "00000000-0000-0000-B7EF-4E5D8696DEAC", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1125", "Tuscaloosa", "2003", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-uafz~wgtp~c4xq", "00000000-0000-0000-70B8-B9385EA8A598", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1069", "Houston", "2006", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-bqnk~p67p.drd3", "00000000-0000-0000-B1DD-D972D44038D6", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1101", "Montgomery", "2009", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-3fzw_pf8x-urad", "00000000-0000-0000-B5A5-38D17ADBDCAF", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1117", "Shelby", "2012", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-nm4k~2d55.vu7j", "00000000-0000-0000-F66E-2B886DECE6CB", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1097", "Mobile", "2013", "0", "%", "Percent", "Monitor Only", "1"],
+    ["row-jx6e~4gpi~q8b2", "00000000-0000-0000-10BE-E4CFBF979880", 0, 1439382361, null, 1439382361, null, "{ }", "85", "Percent of days with PM2.5 levels over the National Ambient Air Quality Standard (NAAQS)", "Percent", "State x County", "1", "Alabama", "1069", "Houston", "2000", "1.0638297872340401", "%", "Percent", "Monitor Only", "1"]
   ]
-  }
+}
