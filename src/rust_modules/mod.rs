@@ -1,2 +1,2 @@
-pub mod primes;
+pub mod my_path;
 pub mod adjacent;
