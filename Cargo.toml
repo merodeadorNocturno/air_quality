@@ -9,6 +9,10 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1"
 serde_derive = "1"
 itertools = "*"
+dirs = "2.0.2"
 
 [profile.dev]
+opt-level = 3
+
+[profile.release]
 opt-level = 3
