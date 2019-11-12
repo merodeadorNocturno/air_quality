@@ -2,8 +2,10 @@ pub mod load_file {
   use std::fs::File;
   use std::io::prelude::*;
   use std::io::BufReader;
+  use std::path::PathBuf;
 
-  pub fn read_file(filepath: &str) -> String {
+
+  pub fn read_file(filepath: &PathBuf) -> String {
       let file = File::open(filepath).expect("could not open file::");
       let mut buffered_reader = BufReader::new(file);
       let mut contents = String::new();
