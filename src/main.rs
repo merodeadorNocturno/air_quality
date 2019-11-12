@@ -14,6 +14,7 @@ use itertools::Itertools;
 
 mod rust_modules;
 
+use rust_modules::my_path::get_dir_path;
 use std::path::PathBuf;
 
 
