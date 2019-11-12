@@ -1,7 +1,7 @@
 pub mod air_data {
-  use serde::Deserialize;
+  use serde::{Serialize, Deserialize};
 
-  #[derive(Deserialize)]
+  #[derive(Serialize, Deserialize)]
   pub struct AirData {
     pub sid: String,
     pub id: String,
