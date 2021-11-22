@@ -31,7 +31,7 @@ fn create_data_vector(data: JsonValue) -> Vec<UsefulData> {
   let data_vector: Vec<UsefulData> = air_data_vector
     .into_iter()
     .map(|adv| -> UsefulData {
-      let ud = UsefulData {
+      let useful_data = UsefulData {
         measure_id: adv.measure_id.to_string().parse().unwrap(),
         measure_name: adv.measure_name,
         measure_type: adv.measure_type,
@@ -48,7 +48,7 @@ fn create_data_vector(data: JsonValue) -> Vec<UsefulData> {
         monitor_only: adv.monitor_only.to_string().parse().unwrap(),
       };
 
-      ud
+      useful_data
     })
     .collect();
 
@@ -90,7 +90,7 @@ fn filter_by_type(data: &Vec<UsefulData>, my_type: String) -> Vec<UsefulData> {
     .into_iter()
     .filter(|item| item.measure_type.to_string() == my_type)
     .map(|item| -> UsefulData {
-      let ud = UsefulData {
+      let useful_data = UsefulData {
         measure_id: item.measure_id.to_string().parse().unwrap(),
         measure_name: item.measure_name.to_string(),
         measure_type: item.measure_type.to_string(),
@@ -107,7 +107,7 @@ fn filter_by_type(data: &Vec<UsefulData>, my_type: String) -> Vec<UsefulData> {
         monitor_only: item.monitor_only.to_string().parse().unwrap(),
       };
 
-      ud
+      useful_data
     })
     .collect();
 

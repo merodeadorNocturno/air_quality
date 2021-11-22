@@ -30,11 +30,6 @@ const createDataObject = data => {
   return myData;
 };
 
-const averageData = data => {
-  const avgData = reducer(data);
-  return avgData;
-};
-
 const getMeasureTypes = data => {
   const myTypesArray = data
     .map(item => item.measure_type);
@@ -59,13 +54,13 @@ const myMeasureIds = getMeasureIds(data);
 const myTypes = getMeasureTypes(data);
 
 const counts = filterByType(data, 'Counts');
-const avgCounts = averageData(counts);
+const avgCounts = reducer(counts);
 
 const percent = filterByType(data, 'Percent');
-const avgPct = averageData(percent);
+const avgPct = reducer(percent);
 
 const average = filterByType(data, 'Average');
-const avgAvg = averageData(average);
+const avgAvg = reducer(average);
 
 
 console.timeEnd('Node:');
