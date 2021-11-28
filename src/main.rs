@@ -114,6 +114,62 @@ fn filter_by_type(data: &Vec<UsefulData>, my_type: String) -> Vec<UsefulData> {
   my_reference
 }
 
+fn filter_by_county_name(data: &Vec<UsefulData>, county_name: String) -> Vec<UsefulData> {
+  let location = data
+    .into_iter()
+    .filter(|item| item.county_name.to_string() == county_name)
+    .map(|item| -> UsefulData {
+      let useful_data = UsefulData {
+        measure_id: item.measure_id.to_string().parse().unwrap(),
+        measure_name: item.measure_name.to_string(),
+        measure_type: item.measure_type.to_string(),
+        stratification_level: item.stratification_level.to_string(),
+        state_fips: item.state_fips.to_string().parse().unwrap(),
+        state_name: item.state_name.to_string(),
+        county_fips: item.county_fips.to_string().parse().unwrap(),
+        county_name: item.county_name.to_string(),
+        report_year: item.report_year.to_string().parse().unwrap(),
+        value: item.value.to_string().parse().unwrap(),
+        unit: item.unit.to_string(),
+        unit_name: item.unit_name.to_string(),
+        data_origin: item.data_origin.to_string(),
+        monitor_only: item.monitor_only.to_string().parse().unwrap(),
+      };
+      useful_data
+    })
+    .collect();
+
+  location
+}
+
+fn filter_by_state_name(data: &Vec<UsefulData>, state_name: String) -> Vec<UsefulData> {
+  let location = data
+    .into_iter()
+    .filter(|item| item.state_name.to_string() == state_name && item.unit.to_string() == "µg/m³")
+    .map(|item| -> UsefulData {
+      let useful_data = UsefulData {
+        measure_id: item.measure_id.to_string().parse().unwrap(),
+        measure_name: item.measure_name.to_string(),
+        measure_type: item.measure_type.to_string(),
+        stratification_level: item.stratification_level.to_string(),
+        state_fips: item.state_fips.to_string().parse().unwrap(),
+        state_name: item.state_name.to_string(),
+        county_fips: item.county_fips.to_string().parse().unwrap(),
+        county_name: item.county_name.to_string(),
+        report_year: item.report_year.to_string().parse().unwrap(),
+        value: item.value.to_string().parse().unwrap(),
+        unit: item.unit.to_string(),
+        unit_name: item.unit_name.to_string(),
+        data_origin: item.data_origin.to_string(),
+        monitor_only: item.monitor_only.to_string().parse().unwrap(),
+      };
+      useful_data
+    })
+    .collect();
+
+  location
+}
+
 fn main() {
   let init = Instant::now();
   let filepath = get_dir_path();
@@ -134,6 +190,9 @@ fn main() {
   let _avg_vector: Vec<UsefulData> = filter_by_type(&_my_data, "Average".to_string());
   let _avg_avg: f64 = reducer(&_avg_vector);
 
+  let _connecticut: Vec<UsefulData> = filter_by_state_name(&_my_data, "Connecticut".to_string());
+  let _avg_connecticut: f64 = reducer(&_connecticut);
+
   let ended = Instant::now();
 
   println!("Rust:: {:?}", ended.duration_since(init));
@@ -148,5 +207,9 @@ fn main() {
   println!(" ");
   println!("\tTotal Average registers: {}", &_avg_vector.len());
   println!("\tAverage in Average: {}", &_avg_avg);
+  println!(" ");
+
+  println!("\tAverage in Connecticut: {} µg/m³", &_avg_connecticut);
+
   println!(" ");
 }

@@ -1,5 +1,5 @@
 pub mod air_data {
-  use serde::{Serialize, Deserialize};
+  use serde::{Deserialize, Serialize};
 
   #[derive(Serialize, Deserialize)]
   pub struct AirData {
@@ -25,6 +25,12 @@ pub mod air_data {
     pub unit_name: String,
     pub data_origin: String,
     pub monitor_only: String,
+  }
+
+  #[derive(Debug)]
+  pub struct StateUsefulData {
+    pub state: String,
+    pub useful_data: Vec<UsefulData>,
   }
 
   #[derive(Debug)]
